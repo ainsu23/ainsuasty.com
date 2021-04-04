@@ -3,7 +3,7 @@ slug: about
 title: "About me \U0001F61C"
 ---
 
-My name is **Andres Felipe Insuasty Ch.**, I love working with *R* for data analysis. I am from Cali (Capital of salsa dancing), Colombia. I lived in BogotÃ¡ but I travel a lot around the world with my girlfriend __Klaudia__.
+My name is **Andrés Felipe Insuasty Ch.**, I love working with *R* for data analysis. I am from Cali (Capital of salsa dancing), Colombia. I lived in Bogotá but I travel a lot around the world with my girlfriend __Klaudia__.
 I have had experience using R since my master degree (graduated in 2015). This involve **getting + wragling + automatic reports** for 3 different companies. Finally, I have taught to use R to my team at my previous work.
 
 ## PROJECTS
