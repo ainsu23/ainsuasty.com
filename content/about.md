@@ -8,7 +8,7 @@ I have had experience using R since my master degree (graduated in 2015). This i
 
 ## PROJECTS
 
-As long as I can't show you my projects done in my previous works, I have created own projects with colombian public data in order to describe the beauty and not so beauty of my country 
+As long as I can't show you my projects done in my previous works, I have created own projects with public data in order to describe my passion for data.
 
 *All would be uploaded to my [GitHub](https://github.com/ainsu23)*
 
