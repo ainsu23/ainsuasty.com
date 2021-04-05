@@ -10,7 +10,7 @@ pygmentsCodeFencesGuessSyntax: yes
 enableEmoji: yes
 params:
   author: Andres Insuasty
-  avatarURL: images/Foto_Marca_Personal.jpg
+  avatarurl = "images/Foto_Marca_Personal.jpeg"
   colorScheme: auto
   commit: https://github.com/luizdepra/hugo-coder/tree/
   csp:
