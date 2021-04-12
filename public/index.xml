@@ -6,7 +6,16 @@
     <description>Recent content on AINSUASTY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tidytuesday</title>
+      <link>http://www.ainsuasty.com/projects/2021-04-06-tidytuesday/</link>
+      <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/projects/2021-04-06-tidytuesday/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Extract information with encoding in R</title>
       <link>http://www.ainsuasty.com/posts/extract-information-with-encoding/</link>

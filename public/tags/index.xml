@@ -6,7 +6,16 @@
     <description>Recent content in Tags on AINSUASTY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tidytuesday</title>
+      <link>http://www.ainsuasty.com/tags/tidytuesday/</link>
+      <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/tags/tidytuesday/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Encoding</title>
       <link>http://www.ainsuasty.com/tags/encoding/</link>
