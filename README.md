@@ -1,2 +1,2 @@
 # ainsuasty.com
-Share R experiance and knowledge at my jobs 
+Share R experience and knowledge at my jobs 
