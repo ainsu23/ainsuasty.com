@@ -11,7 +11,7 @@ enableEmoji: yes
 googleAnalytics: "UA-176122758-1"
 params:
   author: Andres Insuasty
-  avatarurl : "images/Foto_Marca_Personal.jpeg"
+  avatarurl: "images/Foto_Marca_Personal.jpeg"
   colorScheme: auto
   commit: https://github.com/luizdepra/hugo-coder/tree/
   csp:
