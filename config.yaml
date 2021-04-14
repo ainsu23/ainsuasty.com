@@ -11,38 +11,14 @@ enableEmoji: yes
 googleAnalytics: "UA-176122758-1"
 params:
   author: Andres Insuasty
-  avatarurl : "images/Foto_Marca_Personal.jpeg"
+  # avatarurl: images/Foto_Marca_Personal.jpeg
   colorScheme: auto
-  commit: https://github.com/luizdepra/hugo-coder/tree/
-  csp:
-    childsrc: '''self'''
-    connectsrc:
-      - '''self'''
-      - https://www.google-analytics.com
-    fontsrc:
-      - '''self'''
-      - https://fonts.gstatic.com
-      - https://cdn.jsdelivr.net/
-    formaction: '''self'''
-    framesrc: '''self'''
-    imgsrc: '''self'''
-    objectsrc: '''none'''
-    prefetchsrc: '''self'''
-    scriptsrc:
-      - '''self'''
-      - '''unsafe-inline'''
-      - https://www.google-analytics.com
-    stylesrc:
-      - '''self'''
-      - '''unsafe-inline'''
-      - https://fonts.googleapis.com/
-      - https://cdn.jsdelivr.net/
   customCSS: []
   customJS: []
   customSCSS: []
   dateFormat: January 2, 2006
   description: Andres Insuasty's personal website
-  enableTwemoji: no
+  enableTwemoji: yes
   footerContent: Personal Website made with love from Rstudio cloud + hugo + Github + imagination and hardwork.
   hideColorSchemeToggle: no
   hideCopyright: no
@@ -87,4 +63,4 @@ languages:
           weight: 3
         - name: Contact me
           url: contact/
-          weight: 5
+          weight: 4
