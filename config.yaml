@@ -11,7 +11,11 @@ enableEmoji: yes
 googleAnalytics: "UA-176122758-1"
 params:
   author: Andres Insuasty
+<<<<<<< HEAD
   # avatarurl: images/Foto_Marca_Personal.jpeg
+=======
+  avatarurl: "images/Foto_Marca_Personal.jpeg"
+>>>>>>> 38c7205fc5832819f034f4e4295117c10f53bbad
   colorScheme: auto
   customCSS: []
   customJS: []
