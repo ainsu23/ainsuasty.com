@@ -39,6 +39,8 @@ email<-blastula::render_email(input = tempreport)
   
 ![](images/AutomaticReport.JPG)
 
+
+
 ### *Credentials 
 Emails are sent throught smtp, this requires a port (specified by your company or by email vendor - for outlook is 587).
 
