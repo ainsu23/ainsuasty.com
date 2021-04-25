@@ -37,7 +37,7 @@ email<-blastula::render_email(input = tempreport)
  
  `verbose = FALSE)`
   
-![](images/AutomaticReport.JPG)
+![](images/AutomaticReport.JPG)![Rmardown file](images/Saludos_Rmarkdown.JPG)
 
 
 
