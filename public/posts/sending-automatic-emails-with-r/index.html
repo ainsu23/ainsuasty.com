@@ -10,31 +10,40 @@
     
 
     <meta name="author" content="Andres Insuasty">
-    <meta name="description" content="Are you a non English R user? In my case, Spanish language has the following letters: á, é, í, ó, ú, ü and ñ. This letters are saved different depending on the encoding (computation language) of the table you are extracting the data. And reading them might cause some headaches.
-Tips To avoid having strange characters when reading the previews letters, make sure you are extracting the data with the same encoding of the table from your database (check properties of the table) or excel file.">
+    <meta name="description" content="Automatic reports through emails.    Impress your boss with automatic reports in their emails.
+Packages required:
+ blastula: Package to send emails keyring: Set credentials of email Rmardown: Create automatic reports  Read Rmarkdown file    tempreport &lt;- file.path(&hellip;) # set directory of your Rmarkdown file
+Render mail with tempfile    email&lt;-blastula::render_email(input = tempreport)
+send email    *credentials are explained at the end of the post!">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Extract information with encoding in R"/>
-<meta name="twitter:description" content="Are you a non English R user? In my case, Spanish language has the following letters: á, é, í, ó, ú, ü and ñ. This letters are saved different depending on the encoding (computation language) of the table you are extracting the data. And reading them might cause some headaches.
-Tips To avoid having strange characters when reading the previews letters, make sure you are extracting the data with the same encoding of the table from your database (check properties of the table) or excel file."/>
+<meta name="twitter:title" content="Sending automatic emails with R"/>
+<meta name="twitter:description" content="Automatic reports through emails.    Impress your boss with automatic reports in their emails.
+Packages required:
+ blastula: Package to send emails keyring: Set credentials of email Rmardown: Create automatic reports  Read Rmarkdown file    tempreport &lt;- file.path(&hellip;) # set directory of your Rmarkdown file
+Render mail with tempfile    email&lt;-blastula::render_email(input = tempreport)
+send email    *credentials are explained at the end of the post!"/>
 
-    <meta property="og:title" content="Extract information with encoding in R" />
-<meta property="og:description" content="Are you a non English R user? In my case, Spanish language has the following letters: á, é, í, ó, ú, ü and ñ. This letters are saved different depending on the encoding (computation language) of the table you are extracting the data. And reading them might cause some headaches.
-Tips To avoid having strange characters when reading the previews letters, make sure you are extracting the data with the same encoding of the table from your database (check properties of the table) or excel file." />
+    <meta property="og:title" content="Sending automatic emails with R" />
+<meta property="og:description" content="Automatic reports through emails.    Impress your boss with automatic reports in their emails.
+Packages required:
+ blastula: Package to send emails keyring: Set credentials of email Rmardown: Create automatic reports  Read Rmarkdown file    tempreport &lt;- file.path(&hellip;) # set directory of your Rmarkdown file
+Render mail with tempfile    email&lt;-blastula::render_email(input = tempreport)
+send email    *credentials are explained at the end of the post!" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.ainsuasty.com/posts/extract-information-with-encoding/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-04-03T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-04-03T00:00:00&#43;00:00" />
+<meta property="og:url" content="http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-04-25T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-04-25T00:00:00&#43;00:00" />
 
 
 
     <title>
-  Extract information with encoding in R · AINSUASTY
+  Sending automatic emails with R · AINSUASTY
 </title>
 
     
-      <link rel="canonical" href="http://www.ainsuasty.com/posts/extract-information-with-encoding/">
+      <link rel="canonical" href="http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/">
     
 
     <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" crossorigin>
@@ -133,8 +142,8 @@ Tips To avoid having strange characters when reading the previews letters, make 
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="http://www.ainsuasty.com/posts/extract-information-with-encoding/">
-              Extract information with encoding in R
+            <a class="title-link" href="http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/">
+              Sending automatic emails with R
             </a>
           </h1>
         </div>
@@ -142,56 +151,81 @@ Tips To avoid having strange characters when reading the previews letters, make 
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime='2021-04-03T00:00:00Z'>
-                April 3, 2021
+              <time datetime='2021-04-25T00:00:00Z'>
+                April 25, 2021
               </time>
             </span>
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              2-minute read
+              One-minute read
             </span>
           </div>
           
           <div class="categories">
   <i class="fa fa-folder" aria-hidden="true"></i>
-    <a href="/categories/extract-information/">Extract information</a></div>
+    <a href="/categories/rmarkdown/">Rmarkdown</a>
+      <span class="separator">•</span>
+    <a href="/categories/blastula/">Blastula</a></div>
 
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
-    <a href="/tags/encoding/">Encoding</a></div>
+    <a href="/tags/rmarkdown/">Rmarkdown</a>
+      <span class="separator">•</span>
+    <a href="/tags/blastula/">Blastula</a></div>
 
         </div>
       </header>
 
       <div>
         
-        
-<script src="http://www.ainsuasty.com/posts/extract-information-with-encoding/index.en_files/header-attrs/header-attrs.js"></script>
-
-
-<div id="are-you-a-non-english-r-user" class="section level2">
-<h2><em>Are you a non English R user?</em></h2>
-<p>In my case, Spanish language has the following letters: á, é, í, ó, ú, ü and ñ. This letters are saved different depending on the encoding (computation language) of the table you are extracting the data. And reading them might cause some headaches.</p>
-<div id="tips" class="section level3">
-<h3>Tips</h3>
-<ol style="list-style-type: decimal">
-<li><p>To avoid having strange characters when reading the previews letters, make sure you are extracting the data with the same encoding of the table from your database (check properties of the table) or excel file.</p></li>
-<li><p>Choose the correct option in the parameter encoding when reading the data.</p></li>
+        <h1 id="automatic-reports-through-emails">
+  Automatic reports through emails.
+  <a class="heading-link" href="#automatic-reports-through-emails">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>Impress your boss with automatic reports in their emails.</p>
+<p>Packages required:</p>
+<ol>
+<li><code>blastula</code>: Package to send emails</li>
+<li><code>keyring</code>: Set credentials of email</li>
+<li><code>Rmardown</code>: Create automatic reports</li>
 </ol>
-<p><em>For database</em>, when you are establishing connection, use the encoding of the table
-<strong><code>con&lt;-DBI::dbConnect(odbc::odbc(),"Nombre_odbc",encoding="Latin1")</code></strong></p>
-<p>If different tables from the database use different encoding, use a different <em>con</em> when using <code>DBI::dbgetquery(con, glue::glue("..."))</code></p>
-<p>For excel, good news!
-<code>readxl::read.xlsx</code> identifies the encoding by itself and bring the information correctly.</p>
-<p>For csv or txt files . Use file encoding parameter when using the read function.</p>
-<ol start="3" style="list-style-type: decimal">
-<li>Encoding also apply when you are writing in R. Save the file with encoding utf8 and open with Latin1 might provoke different characters, then, reopen the file with the same encoding that was saved.</li>
-</ol>
-<p>Last tip for Spanish users: Most common encoding for Spanish language are UTF-8
-, Latin1 and ISO 8859-1</p>
-<p>Hope this tips help you in your daily work. It took some mistakes when presenting or errors that i have to deal with workarounds while i found the real and easy way of working with.</p>
-</div>
-</div>
+<h3 id="read-rmarkdown-file">
+  Read Rmarkdown file
+  <a class="heading-link" href="#read-rmarkdown-file">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>tempreport &lt;- file.path(&hellip;) # set directory of your Rmarkdown file</p>
+<h3 id="render-mail-with-tempfile">
+  Render mail with tempfile
+  <a class="heading-link" href="#render-mail-with-tempfile">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>email&lt;-blastula::render_email(input = tempreport)</p>
+<h3 id="send-email">
+  send email
+  <a class="heading-link" href="#send-email">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>*credentials are explained at the end of the post!</p>
+<p><code>email %&gt;% blastula::smtp_send( </code></p>
+<p><code>from=&quot;from.username@hotmail.com&quot;,</code></p>
+<p><code>to=&quot;to.username@hotmail.com&quot;, # c() to send 2 or more </code></p>
+<p><code>subject = glue(&quot;Automatic emails \U0001F600&quot;),</code></p>
+<p><code>credentials=creds_key(&quot;outlook&quot;), # given in credentials</code></p>
+<p><code>verbose = FALSE)</code></p>
+<h3 id="credentials">
+  *Credentials
+  <a class="heading-link" href="#credentials">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Emails are sent throught smtp, this requires a port (specified by your company or by email vendor - for outlook is 587).</p>
+<p><code># blastula::create_smtp_creds_key(&quot;outlook&quot;,&quot;your.username@hotmail.com&quot;,provider = &quot;outlook&quot;,port = 587)</code></p>
 
       </div>
 

@@ -6,7 +6,25 @@
     <description>Recent content in Categories on AINSUASTY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blastula</title>
+      <link>http://www.ainsuasty.com/categories/blastula/</link>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/blastula/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rmarkdown</title>
+      <link>http://www.ainsuasty.com/categories/rmarkdown/</link>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/rmarkdown/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>graphs</title>
       <link>http://www.ainsuasty.com/categories/graphs/</link>
