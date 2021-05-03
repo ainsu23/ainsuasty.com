@@ -64,3 +64,6 @@ languages:
         - name: Contact me
           url: contact/
           weight: 4
+        - name: cv
+          url: cv/
+          weight: 5
