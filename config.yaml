@@ -73,4 +73,4 @@ languages:
       main:
         - name: Blog
           url: post/
-          weight: 2
+          weight: 1
