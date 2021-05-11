@@ -67,3 +67,10 @@ languages:
         - name: cv
           url: cv/
           weight: 5
+  es:
+    languageName: ':es:'
+    menu:
+      main:
+        - name: Blog
+          url: post/
+          weight: 2

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gganimate on AINSUASTY</title>
+    <link>http://www.ainsuasty.com/es/tags/gganimate/</link>
+    <description>Recent content in gganimate on AINSUASTY</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 09 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/es/tags/gganimate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crear GIFs con R: Evaluacion agricultura Colombia</title>
+      <link>http://www.ainsuasty.com/es/post/crear-gifs/</link>
+      <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/es/post/crear-gifs/</guid>
+      <description>Aprende R con datos de `r colorize(&#34;Co&#34;,&#34;yellow&#34;)`&amp;lt;span style=&#39;color: blue;&#39;&amp;gt;lom&amp;lt;/span&amp;gt;&amp;lt;span style=&#39;color: red;&#39;&amp;gt;bia&amp;lt;/span&amp;gt;!!En esta ocasión revisamos la evolución agropecuaria de Colombia por departamentos a partir del año 2006 hasta el año 2018. Los datos fueron extraídos de los Datos Abiertos de Colombia.
+R es un software estadístico OpenSource, esto quiere decir que el mundo entero está aportando al conocimiento y desarrollo de este mismo. Por ejemplo: esta página Web y blog fueron creados sólo con código R.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,66 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>http://www.ainsuasty.com/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/tags/blastula/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/categories/blastula/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/categories/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/posts/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/tags/rmarkdown/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/categories/rmarkdown/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/tags/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/categories/graphs/</loc>
-    <lastmod>2021-04-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/projects/</loc>
-    <lastmod>2021-04-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/projects/tidytuesday/</loc>
-    <lastmod>2021-04-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/tags/tidytuesday/</loc>
-    <lastmod>2021-04-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/categories/tidytuesday/</loc>
-    <lastmod>2021-04-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/tags/encoding/</loc>
-    <lastmod>2021-04-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/categories/extract-information/</loc>
-    <lastmod>2021-04-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/posts/extract-information-with-encoding/</loc>
-    <lastmod>2021-04-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/about/</loc>
-  </url><url>
-    <loc>http://www.ainsuasty.com/authors/</loc>
-  </url><url>
-    <loc>http://www.ainsuasty.com/contact/</loc>
-  </url><url>
-    <loc>http://www.ainsuasty.com/projects/</loc>
-  </url><url>
-    <loc>http://www.ainsuasty.com/series/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>http://www.ainsuasty.com/en/sitemap.xml</loc>
+    
+      <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://www.ainsuasty.com/es/sitemap.xml</loc>
+    
+      <lastmod>2021-05-09T00:00:00+00:00</lastmod>
+    
+  </sitemap>
+  
+</sitemapindex>
