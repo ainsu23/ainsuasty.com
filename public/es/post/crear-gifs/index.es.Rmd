@@ -34,9 +34,7 @@ background-color: gray;
 }
 ```
 
-# Aprende *R* con datos de ``` r colorize("Co","yellow")``r colorize("lom","blue")``r colorize("bia","red") ```!!
-
-![](images/plot-1.gif){width="493"}
+# Aprende *R* con datos de `r colorize("Co","yellow")``r colorize("lom","blue")``r colorize("bia","red")`!!
 
 En esta ocasión revisamos la evolución agropecuaria de Colombia por departamentos a partir del año 2006 hasta el año 2018. Los datos fueron extraídos de los [*Datos Abiertos*](https://www.datos.gov.co/) de Colombia.
 
@@ -179,4 +177,4 @@ El siguiente código es una combinación de paquetes muy poderosos para la const
 
 ```
 
-![](images/plot-1.gif){width="493"}
+![](index.es_files/figure-html/plot-1.gif)
