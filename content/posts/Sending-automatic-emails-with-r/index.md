@@ -28,14 +28,13 @@ email\<-blastula::render_email(input = tempreport)
 
 \*credentials are explained at the end of the post!
 
-``` R
-email %>% 
-blastula::smtp_send(from="from.username@hotmail.com",
-to="to.username@hotmail.com", # c() to send 2 or more
-subject = glue("Automatic emails \U0001F600"),
-credentials=creds_key("outlook"), # given in credentials
-verbose = FALSE)
-```
+> ``` R
+> email %>% blastula::smtp_send(from="from.username@hotmail.com",
+> to="to.username@hotmail.com", # c() to send 2 or more
+> subject = glue("Automatic emails \U0001F600"),
+> credentials=creds_key("outlook"), # given in credentials
+> verbose = FALSE)
+> ```
 
 ![](images/AutomaticReport.JPG)![Rmardown file](images/Saludos_Rmarkdown.JPG)
 
