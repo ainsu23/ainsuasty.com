@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Sun, 25 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Sending automatic emails with R</title>
+      <title>Sending automatic emails with R 📧</title>
       <link>http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/</link>
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
@@ -30,7 +30,7 @@ send email*credentials are explained at the end of the post!</description>
     </item>
     
     <item>
-      <title>Extract information with encoding in R</title>
+      <title>Extract information with encoding in R 🔡</title>
       <link>http://www.ainsuasty.com/posts/extract-information-with-encoding/</link>
       <pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate>
       
@@ -40,7 +40,7 @@ Tips 💡To avoid having strange characters when reading the previews letters, 
     </item>
     
     <item>
-      <title>About me 😜</title>
+      <title>About me 😄 </title>
       <link>http://www.ainsuasty.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

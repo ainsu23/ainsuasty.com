@@ -1,5 +1,5 @@
 ---
-title: "Extract information with encoding in R"
+title: "Extract information with encoding in R 🔡"
 author: 'Andrés Felipe Insuasty Ch.'
 date: '2021-04-03'
 slug: Extract information with encoding

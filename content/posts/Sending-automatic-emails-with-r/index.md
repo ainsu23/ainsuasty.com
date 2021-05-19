@@ -1,5 +1,5 @@
 ---
-title: Sending automatic emails with R
+title: Sending automatic emails with R 📧
 author: 'Andrés Felipe Insuasty Ch.'
 date: '2021-04-25'
 categories: [Rmarkdown,Blastula]
@@ -16,7 +16,7 @@ Packages required:
 2.  `keyring`: Set credentials of email 🔐
 3.  `Rmardown`: Create automatic reports
 
-### Read Rmarkdown file 
+### Read Rmarkdown file
 
 tempreport \<- file.path(...) \# set directory of your Rmarkdown file
 
@@ -28,7 +28,7 @@ email\<-blastula::render_email(input = tempreport)
 
 \*credentials are explained at the end of the post!
 
-> ``` R
+> ``` r
 > email %>% blastula::smtp_send(from="from.username@hotmail.com",
 > to="to.username@hotmail.com", # c() to send 2 or more
 > subject = glue("Automatic emails \U0001F600"),

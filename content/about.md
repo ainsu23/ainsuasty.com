@@ -1,6 +1,6 @@
 ---
 slug: about
-title: "About me \U0001F61C"
+title: "About me 😄 "
 ---
 
 My name is **Andrés Felipe Insuasty Ch.**, I love working with *R* for data analysis. I am from Cali (Capital of salsa dancing 💃), Colombia. I lived in Bogotá but I travel a lot around the world with my girlfriend **Klaudia** 😍. I have had experience using R since my master degree (graduated in 2015). This involve **getting + wragling + automatic reports** for 3 different companies. Finally, I have taught to use R to my team at my previous work.
@@ -15,7 +15,7 @@ As long as I can't show you my projects done in my previous works, I have create
 
 Some fun facts about me:
 
--   Love dancing Salsa  
+-   Love dancing Salsa
 
 -   Learning to take pictures [Check my Instagram](https://www.instagram.com/afinsuasty/) 📷
 
