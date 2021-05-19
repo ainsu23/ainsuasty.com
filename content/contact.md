@@ -3,6 +3,6 @@ slug: contact
 title: Contact
 ---
 
-Follow me on twitter: @Afinsuasty
+Follow me on twitter: \@Afinsuasty 🐦
 
-Write me an email: afinsuasty@hotmail.com
+Write me an email: [afinsuasty\@hotmail.com](mailto:afinsuasty@hotmail.com) 📧

@@ -14,7 +14,7 @@
       
       <guid>http://www.ainsuasty.com/posts/extract-information-with-encoding/</guid>
       <description>Are you a non English R user?In my case, Spanish language has the following letters: á, é, í, ó, ú, ü and ñ. This letters are saved different depending on the encoding (computation language) of the table you are extracting the data. And reading them might cause some headaches.
-TipsTo avoid having strange characters when reading the previews letters, make sure you are extracting the data with the same encoding of the table from your database (check properties of the table) or excel file.</description>
+Tips 💡To avoid having strange characters when reading the previews letters, make sure you are extracting the data with the same encoding of the table from your database (check properties of the table) or excel file.</description>
     </item>
     
   </channel>

@@ -13,9 +13,9 @@
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/</guid>
-      <description>Automatic reports through emails.Impress your boss with automatic reports in their emails.
+      <description>Automatic reports through emails 📧Impress your boss with automatic reports in their emails.
 Packages required:
- blastula: Package to send emails keyring: Set credentials of email Rmardown: Create automatic reports  Read Rmarkdown filetempreport &amp;lt;- file.path(&amp;hellip;) # set directory of your Rmarkdown file
+ blastula: Package to send emails keyring: Set credentials of email 🔐 Rmardown: Create automatic reports  Read Rmarkdown filetempreport &amp;lt;- file.path(&amp;hellip;) # set directory of your Rmarkdown file
 Render mail with tempfileemail&amp;lt;-blastula::render_email(input = tempreport)
 send email*credentials are explained at the end of the post!</description>
     </item>
