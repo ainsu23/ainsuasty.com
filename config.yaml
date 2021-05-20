@@ -19,7 +19,7 @@ params:
   dateFormat: January 2, 2006
   description: Andres Insuasty's personal website
   enableTwemoji: yes
-  footerContent: Personal Website made with love from Rstudio cloud + hugo + Github + imagination and hardwork.
+  footerContent: Personal Website made with ❤️ from Rstudio cloud + hugo + Github + imagination and hardwork.
   hideColorSchemeToggle: no
   hideCopyright: no
   hideCredits: no
