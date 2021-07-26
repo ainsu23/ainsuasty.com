@@ -1,0 +1,30 @@
+---
+title:  Marketing Campaign Optimization - Workforce capacity with R ☑️👨 ✖️👨
+author: Andrés Felipe Insuasty Ch.
+date: '2021-05-28'
+slug: Assign solution with ompr - R
+tags: ["Optimization"]
+categories:
+  - OR
+---
+
+![](images/Sales-organization.jpg){width="388"} ![](images/choose.gif){width="290"}
+
+Figure out the best way to use limited resources is a key advantage in the market. This post will explain how to assign clients to a limited sales workforce with an specific structure within different areas of the company. Previous, looking minimizing cost of assignment.
+
+**Business case**
+
+A company has X different services which would like to communicate to a Y number of clients offered by W kind of workforces (limited by different capacities).
+
+| Service | Structure level | Workforce Type | Capacity |
+|---------|-----------------|----------------|----------|
+| AAA     | 1               | WT_1           | 30       |
+| AAA     | 2               | WT_2           | 20       |
+| AAA     | 3               | WT_3           | 10       |
+|         |                 |                |          |
+|         |                 |                |          |
+|         |                 |                |          |
+|         |                 |                |          |
+|         |                 |                |          |
+|         |                 |                |          |
+|         |                 |                |          |

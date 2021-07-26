@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://www.ainsuasty.com/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -15,14 +15,8 @@
                 href="http://www.ainsuasty.com/"
                 />
   </url><url>
-    <loc>http://www.ainsuasty.com/tags/blastula/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/categories/blastula/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.ainsuasty.com/categories/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -34,20 +28,20 @@
                 href="http://www.ainsuasty.com/categories/"
                 />
   </url><url>
+    <loc>http://www.ainsuasty.com/tags/optimization/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.ainsuasty.com/posts/assign-solution-with-ompr-r/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.ainsuasty.com/categories/or/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.ainsuasty.com/posts/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/tags/rmarkdown/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/categories/rmarkdown/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.ainsuasty.com/tags/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -58,6 +52,21 @@
                 hreflang="en"
                 href="http://www.ainsuasty.com/tags/"
                 />
+  </url><url>
+    <loc>http://www.ainsuasty.com/tags/blastula/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.ainsuasty.com/categories/blastula/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.ainsuasty.com/tags/rmarkdown/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.ainsuasty.com/categories/rmarkdown/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.ainsuasty.com/categories/graphs/</loc>
     <lastmod>2021-04-06T00:00:00+00:00</lastmod>
