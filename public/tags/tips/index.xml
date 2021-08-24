@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tips on AINSUASTY</title>
+    <link>http://www.ainsuasty.com/tags/tips/</link>
+    <description>Recent content in tips on AINSUASTY</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tips de procesos de Excel en R</title>
+      <link>http://www.ainsuasty.com/post/tips-de-procesos-de-excel-en-r/</link>
+      <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/post/tips-de-procesos-de-excel-en-r/</guid>
+      <description>Procesos de excel realizados en R1. Guardar en varias pestañas de un libroDividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
+  separar archivo por columna
+  Seleccionar columna a separar y convierte a lista
+  Crea lista vacía para almacenar bases
+  Guarda cada base filtrada con el registro de la lista en una lista de dataframes, adiciona nombres a los elementos de la lista y mantiene las bases que contengan registros</description>
+    </item>
+    
+  </channel>
+</rss>
