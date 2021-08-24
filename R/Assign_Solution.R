@@ -8,19 +8,15 @@
 #' @param assign_structure Estructura de asignación con límites para las 
 #' retricciones
 #' @return Tabla de clientes asignados
-#' @example assign_solution(Clients = STC, workforce = base_planta)
+#' @example assign_solution(Clients = Call_1, workforce = workers)
 
 assign_solution <- function(Clients, Workforce, assign_structure) {
-  
-  # Cargue librerías ---------------------
-  library(ompr)
-  library(dplyr)
-  library(ROI)
-  library(ompr.roi)
+ 
+  #Cargue de paquetes y conexiones
+  source("R/global.R")
   
   
-  # Manejo de información ----------------
-  
+  tabla <- conn %>% tbl("Clients") %>% collect()
   
   
   
