@@ -19,7 +19,7 @@ columna, resulta facil con el uso de **purrr**.
 
 -   separar archivo por columna
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{style="color: blue;"}{r echo=TRUE, message=FALSE, warning=FALSE}
 library(dplyr)
 
 archivo <-readxl::read_excel(

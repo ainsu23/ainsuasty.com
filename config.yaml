@@ -5,7 +5,7 @@ languageCode: en
 defaultContentLanguage: en
 paginate: 20
 pygmentsStyle: manni
-pygmentsCodeFences: yes
+pygmentsCodeFences: true
 pygmentsCodeFencesGuessSyntax: yes
 enableEmoji: yes
 googleAnalytics: "UA-176122758-1"
