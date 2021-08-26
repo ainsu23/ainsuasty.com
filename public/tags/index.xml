@@ -6,7 +6,25 @@
     <description>Recent content in Tags on AINSUASTY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blogdown</title>
+      <link>http://www.ainsuasty.com/tags/blogdown/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/tags/blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shiny</title>
+      <link>http://www.ainsuasty.com/tags/shiny/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/tags/shiny/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Optimization</title>
       <link>http://www.ainsuasty.com/tags/optimization/</link>
