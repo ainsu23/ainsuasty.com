@@ -5,6 +5,7 @@ languageCode: en
 defaultContentLanguage: en
 paginate: 20
 pygmentsStyle: manni
+highlightjsTheme: Github
 pygmentsUseClassic: no
 pygmentsCodeFences: yes
 pygmentsCodeFencesGuessSyntax: yes
@@ -14,7 +15,7 @@ params:
   author: Andres Felipe Insuasty Ch. 
   avatarurl : "images/Foto_Marca_Personal.jpeg"
   colorScheme: auto
-  customCSS: []
+  customCSS: ["blocks_style.css"]
   customJS: []
   customSCSS: []
   dateFormat: January 2, 2006
