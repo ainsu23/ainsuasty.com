@@ -40,7 +40,7 @@ tempreport <- file.path(...)
 ### Render mail with tempfile
 
 ```{r eval = FALSE}
-# email <- blastula::render_email(input = tempreport)
+email <- blastula::render_email(input = tempreport)
 ```
 
 ### send email

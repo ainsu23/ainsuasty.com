@@ -6,7 +6,30 @@
     <description>Recent content on AINSUASTY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ainsuasty.com</title>
+      <link>http://www.ainsuasty.com/projects/ainsuasty-com/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/projects/ainsuasty-com/</guid>
+      <description>Mi página Web ainsuasty.com 👨‍💼El presente proyecto fue iniciado en el 2020 y tiene el código fuente en github [ainsuasty.com] (https://github.com/ainsu23/ainsuasty.com).
+La plantilla escogida de Hugo es coder y se ha ido adecuando de acuerdo al diseño que quería. Para la creación de la página web se tuvo como referencia el libro de Yihui Xie blogdown
+La página web contiene
+About: Información sobre mí y mis gustos personalesBlog (EN / ES): Explicación de conceptos de funciones en RProjects: Proyectos en los cuales he estado involucrado hasta ahora.</description>
+    </item>
+    
+    <item>
+      <title>Participacion AIS (Analitica Integrada Salud)</title>
+      <link>http://www.ainsuasty.com/projects/2021-08-26-participacion-ais-analitica-integrada-salud/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/projects/2021-08-26-participacion-ais-analitica-integrada-salud/</guid>
+      <description>Mi participación en el proyecto AIS se puede observar en el siguiente link degithub proyais/aisalud
+Colaboración en:
+Mantenimiento y adición de modulos de ShinyDiseño e implmentación de estructuras JSON para actualización de informaciónDocumentación de funciones con roxigenPruebas funcionales de la herramienta</description>
+    </item>
+    
     <item>
       <title>Optimization - Assign solution with R ☑️👨 ✖️👨</title>
       <link>http://www.ainsuasty.com/posts/assign-solution-with-ompr-r/</link>
@@ -25,7 +48,7 @@
       <description>.blocks_style {font-weight: bold;background-color: whitesmoke;color: black;font-style: italic;font-family: Monospace;}Automatic reports through emails 📧Impress your boss with automatic reports in their emails.
 Packages required:
 blastula: Package to send emailskeyring: Set credentials of email 🔐Rmardown: Create automatic reportsRead Rmarkdown fileset directory of your Rmarkdown file
-tempreport &amp;lt;- file.path(...) Render mail with tempfile# email &amp;lt;- blastula::render_email(input = tempreport)send email*credentials are explained at the end of the post!</description>
+tempreport &amp;lt;- file.path(...) Render mail with tempfileemail &amp;lt;- blastula::render_email(input = tempreport)send email*credentials are explained at the end of the post!</description>
     </item>
     
     <item>
@@ -64,15 +87,6 @@ Tips 💡To avoid having strange characters when reading the previews letters, 
       <guid>http://www.ainsuasty.com/contact/</guid>
       <description>Follow me on twitter: @Afinsuasty 🐦
 Write me an email: afinsuasty@hotmail.com 📧</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>http://www.ainsuasty.com/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.ainsuasty.com/projects/</guid>
-      <description>Nothing to see here&amp;hellip; Move along!</description>
     </item>
     
   </channel>

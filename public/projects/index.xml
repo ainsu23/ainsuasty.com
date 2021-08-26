@@ -6,7 +6,30 @@
     <description>Recent content in Projects on AINSUASTY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ainsuasty.com</title>
+      <link>http://www.ainsuasty.com/projects/ainsuasty-com/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/projects/ainsuasty-com/</guid>
+      <description>Mi página Web ainsuasty.com 👨‍💼El presente proyecto fue iniciado en el 2020 y tiene el código fuente en github [ainsuasty.com] (https://github.com/ainsu23/ainsuasty.com).
+La plantilla escogida de Hugo es coder y se ha ido adecuando de acuerdo al diseño que quería. Para la creación de la página web se tuvo como referencia el libro de Yihui Xie blogdown
+La página web contiene
+About: Información sobre mí y mis gustos personalesBlog (EN / ES): Explicación de conceptos de funciones en RProjects: Proyectos en los cuales he estado involucrado hasta ahora.</description>
+    </item>
+    
+    <item>
+      <title>Participacion AIS (Analitica Integrada Salud)</title>
+      <link>http://www.ainsuasty.com/projects/2021-08-26-participacion-ais-analitica-integrada-salud/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/projects/2021-08-26-participacion-ais-analitica-integrada-salud/</guid>
+      <description>Mi participación en el proyecto AIS se puede observar en el siguiente link degithub proyais/aisalud
+Colaboración en:
+Mantenimiento y adición de modulos de ShinyDiseño e implmentación de estructuras JSON para actualización de informaciónDocumentación de funciones con roxigenPruebas funcionales de la herramienta</description>
+    </item>
+    
     <item>
       <title>Tidytuesday</title>
       <link>http://www.ainsuasty.com/projects/tidytuesday/</link>

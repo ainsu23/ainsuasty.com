@@ -25,7 +25,7 @@
       <description>.blocks_style {font-weight: bold;background-color: whitesmoke;color: black;font-style: italic;font-family: Monospace;}Automatic reports through emails 📧Impress your boss with automatic reports in their emails.
 Packages required:
 blastula: Package to send emailskeyring: Set credentials of email 🔐Rmardown: Create automatic reportsRead Rmarkdown fileset directory of your Rmarkdown file
-tempreport &amp;lt;- file.path(...) Render mail with tempfile# email &amp;lt;- blastula::render_email(input = tempreport)send email*credentials are explained at the end of the post!</description>
+tempreport &amp;lt;- file.path(...) Render mail with tempfileemail &amp;lt;- blastula::render_email(input = tempreport)send email*credentials are explained at the end of the post!</description>
     </item>
     
     <item>
