@@ -23,8 +23,8 @@ colorize <- function(x, color) {
 ```
 
 # Reglas en  *Git* 🎯
-
-### `{r colorize("Regla # 1:","blue")}`
+``` r colorize("Co","yellow")``r colorize("lom","blue")``r colorize("bia","red") ```!!
+### `r colorize("Regla # 1:","blue")`
 
 
 *El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.*

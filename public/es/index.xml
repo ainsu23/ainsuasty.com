@@ -13,8 +13,8 @@
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>http://www.ainsuasty.com/es/post/tips-de-procesos-de-excel-en-r/</guid>
-      <description>Procesos de excel realizados en R1. Guardar en varias pestañas de un libroDividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
-separar archivo por columna.favorite {font-weight: bold;background-color: whitesmoke;color: black;font-style: italic;font-family: Monospace;}library(dplyr)archivo &amp;lt;-readxl::read_excel(glue::glue(&amp;quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&amp;quot;))Seleccionar columna a separar y convierte a listacolumna &amp;lt;- archivo %&amp;gt;% select(País) %&amp;gt;% distinct() %&amp;gt;% as.</description>
+      <description>.blocks_style {font-weight: bold;background-color: whitesmoke;color: black;font-style: italic;font-family: Monospace;}Procesos de excel realizados en R1. Guardar en varias pestañas de un libroDividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
+separar archivo por columnalibrary(dplyr)archivo &amp;lt;-readxl::read_excel(glue::glue(&amp;quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&amp;quot;))Seleccionar columna a separar y convierte a listacolumna &amp;lt;- archivo %&amp;gt;% select(País) %&amp;gt;% distinct() %&amp;gt;% as.</description>
     </item>
     
     <item>
