@@ -10,27 +10,24 @@
     
 
     <meta name="author" content="Andres Felipe Insuasty Ch.">
-    <meta name="description" content="Automatic reports through emails 📧Impress your boss with automatic reports in their emails.
+    <meta name="description" content=".blocks_style {font-weight: bold;background-color: whitesmoke;color: black;font-style: italic;font-family: Monospace;}Automatic reports through emails 📧Impress your boss with automatic reports in their emails.
 Packages required:
- blastula: Package to send emails keyring: Set credentials of email 🔐 Rmardown: Create automatic reports  Read Rmarkdown filetempreport &lt;- file.path(&hellip;) # set directory of your Rmarkdown file
-Render mail with tempfileemail&lt;-blastula::render_email(input = tempreport)
-send email*credentials are explained at the end of the post!">
+blastula: Package to send emailskeyring: Set credentials of email 🔐Rmardown: Create automatic reportsRead Rmarkdown fileset directory of your Rmarkdown file
+tempreport &lt;- file.path(...) Render mail with tempfile# email &lt;- blastula::render_email(input = tempreport)send email*credentials are explained at the end of the post!">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Sending automatic emails with R 📧"/>
-<meta name="twitter:description" content="Automatic reports through emails 📧Impress your boss with automatic reports in their emails.
+<meta name="twitter:description" content=".blocks_style {font-weight: bold;background-color: whitesmoke;color: black;font-style: italic;font-family: Monospace;}Automatic reports through emails 📧Impress your boss with automatic reports in their emails.
 Packages required:
- blastula: Package to send emails keyring: Set credentials of email 🔐 Rmardown: Create automatic reports  Read Rmarkdown filetempreport &lt;- file.path(&hellip;) # set directory of your Rmarkdown file
-Render mail with tempfileemail&lt;-blastula::render_email(input = tempreport)
-send email*credentials are explained at the end of the post!"/>
+blastula: Package to send emailskeyring: Set credentials of email 🔐Rmardown: Create automatic reportsRead Rmarkdown fileset directory of your Rmarkdown file
+tempreport &lt;- file.path(...) Render mail with tempfile# email &lt;- blastula::render_email(input = tempreport)send email*credentials are explained at the end of the post!"/>
 
     <meta property="og:title" content="Sending automatic emails with R 📧" />
-<meta property="og:description" content="Automatic reports through emails 📧Impress your boss with automatic reports in their emails.
+<meta property="og:description" content=".blocks_style {font-weight: bold;background-color: whitesmoke;color: black;font-style: italic;font-family: Monospace;}Automatic reports through emails 📧Impress your boss with automatic reports in their emails.
 Packages required:
- blastula: Package to send emails keyring: Set credentials of email 🔐 Rmardown: Create automatic reports  Read Rmarkdown filetempreport &lt;- file.path(&hellip;) # set directory of your Rmarkdown file
-Render mail with tempfileemail&lt;-blastula::render_email(input = tempreport)
-send email*credentials are explained at the end of the post!" />
+blastula: Package to send emailskeyring: Set credentials of email 🔐Rmardown: Create automatic reportsRead Rmarkdown fileset directory of your Rmarkdown file
+tempreport &lt;- file.path(...) Render mail with tempfile# email &lt;- blastula::render_email(input = tempreport)send email*credentials are explained at the end of the post!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-04-25T00:00:00&#43;00:00" />
@@ -202,56 +199,56 @@ send email*credentials are explained at the end of the post!" />
 
       <div>
         
-        <h1 id="automatic-reports-through-emails-">
-  Automatic reports through emails 📧
-  <a class="heading-link" href="#automatic-reports-through-emails-">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h1>
+        
+<script src="http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/index_files/header-attrs/header-attrs.js"></script>
+
+
+<style type="text/css">
+.blocks_style {
+  font-weight: bold;
+  background-color: whitesmoke;
+  color: black;
+  font-style: italic;
+  font-family: Monospace;
+}
+</style>
+<div id="automatic-reports-through-emails" class="section level1">
+<h1>Automatic reports through emails 📧</h1>
 <p>Impress your boss with automatic reports in their emails.</p>
 <p>Packages required:</p>
-<ol>
+<ol style="list-style-type: decimal">
 <li><code>blastula</code>: Package to send emails</li>
 <li><code>keyring</code>: Set credentials of email 🔐</li>
 <li><code>Rmardown</code>: Create automatic reports</li>
 </ol>
-<h3 id="read-rmarkdown-file">
-  Read Rmarkdown file
-  <a class="heading-link" href="#read-rmarkdown-file">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h3>
-<p>tempreport &lt;- file.path(&hellip;) # set directory of your Rmarkdown file</p>
-<h3 id="render-mail-with-tempfile">
-  Render mail with tempfile
-  <a class="heading-link" href="#render-mail-with-tempfile">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h3>
-<p>email&lt;-blastula::render_email(input = tempreport)</p>
-<h3 id="send-email">
-  send email
-  <a class="heading-link" href="#send-email">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h3>
+<div id="read-rmarkdown-file" class="section level3">
+<h3>Read Rmarkdown file</h3>
+<p>set directory of your Rmarkdown file</p>
+<pre class="r blocks_style"><code>tempreport &lt;- file.path(...) </code></pre>
+</div>
+<div id="render-mail-with-tempfile" class="section level3">
+<h3>Render mail with tempfile</h3>
+<pre class="r blocks_style"><code># email &lt;- blastula::render_email(input = tempreport)</code></pre>
+</div>
+<div id="send-email" class="section level3">
+<h3>send email</h3>
 <p>*credentials are explained at the end of the post!</p>
 <blockquote>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">email <span style="color:#555">%&gt;%</span> blastula<span style="color:#555">::</span><span style="color:#c0f">smtp_send</span>(from<span style="color:#555">=</span><span style="color:#c30">&#34;from.username@hotmail.com&#34;</span>,
-to<span style="color:#555">=</span><span style="color:#c30">&#34;to.username@hotmail.com&#34;</span>, <span style="color:#09f;font-style:italic"># c() to send 2 or more</span>
-subject <span style="color:#555">=</span> <span style="color:#c0f">glue</span>(<span style="color:#c30">&#34;Automatic emails \U0001F600&#34;</span>),
-credentials<span style="color:#555">=</span><span style="color:#c0f">creds_key</span>(<span style="color:#c30">&#34;outlook&#34;</span>), <span style="color:#09f;font-style:italic"># given in credentials</span>
-verbose <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">FALSE</span>)
-</code></pre></div></blockquote>
-<p><img src="images/AutomaticReport.JPG" alt=""><img src="images/Saludos_Rmarkdown.JPG" alt="Rmardown file"></p>
-<h3 id="credentials">
-  *Credentials
-  <a class="heading-link" href="#credentials">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h3>
+<pre class="r"><code>email %&gt;% blastula::smtp_send(from=&quot;from.username@hotmail.com&quot;,
+to=&quot;to.username@hotmail.com&quot;, # c() to send 2 or more
+subject = glue(&quot;Automatic emails \U0001F600&quot;),
+credentials=creds_key(&quot;outlook&quot;), # given in credentials
+verbose = FALSE)</code></pre>
+</blockquote>
+<p><img src="images/AutomaticReport.JPG" /><img src="images/Saludos_Rmarkdown.JPG" alt="Rmardown file" /></p>
+</div>
+<div id="credentials" class="section level3">
+<h3>*Credentials</h3>
 <p>Emails are sent throught smtp, this requires a port (specified by your company or by email vendor - for outlook is 587).</p>
-<p><code># blastula::create_smtp_creds_key(&quot;outlook&quot;,&quot;your.username@hotmail.com&quot;,provider = &quot;outlook&quot;,port = 587)</code></p>
+<pre class="r blocks_style"><code># blastula::create_smtp_creds_key(
+  # &quot;outlook&quot;,&quot;your.username@hotmail.com&quot;,provider = &quot;outlook&quot;,port = 587)`</code></pre>
+</div>
+</div>
 
       </div>
 

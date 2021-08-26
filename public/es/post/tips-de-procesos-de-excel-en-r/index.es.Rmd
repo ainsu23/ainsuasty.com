@@ -8,8 +8,22 @@ categories:
 tags:
   - Excel
   - tips
-css: "blocks_style.css"
 ---
+```{css,echo = FALSE}
+.blocks_style {
+  font-weight: bold;
+  background-color: whitesmoke;
+  color: black;
+  font-style: italic;
+  font-family: Monospace;
+}
+```
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(class.source = "blocks_style")
+
+```
+
 
 ## Procesos de excel realizados en R
 
@@ -19,18 +33,7 @@ Dividir una base de un libro de excel en varias pestañas teniendo en cuenta una
 
 -   separar archivo por columna
 
-```{css,echo = FALSE}
-.favorite {
-  font-weight: bold;
-  background-color: whitesmoke;
-  color: black;
-  font-style: italic;
-  font-family: Monospace;
-}
-```
-
-
-```{r echo=TRUE, message=FALSE, warning=FALSE,class.source = "favorite"}
+```{r echo=TRUE, message=FALSE, warning=FALSE}
 
 library(dplyr)
 
