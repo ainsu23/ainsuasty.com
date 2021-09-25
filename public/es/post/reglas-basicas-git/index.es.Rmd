@@ -63,4 +63,4 @@ Permite volver commits en el tiempo, se puede perder la información dependiendo
   - git push -f: fuerza cambios con un push
 
   
-Git Fin !
+Git Fin ! 
