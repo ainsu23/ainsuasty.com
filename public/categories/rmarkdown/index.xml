@@ -13,10 +13,10 @@
       <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>http://www.ainsuasty.com/projects/ainsuasty-com/</guid>
-      <description>Mi página Web ainsuasty.com 👨‍💼El presente proyecto fue iniciado en el 2020 y tiene el código fuente en github [ainsuasty.com] (https://github.com/ainsu23/ainsuasty.com).
+      <description>Mi página Web ainsuasty.com 👨‍💼 El presente proyecto fue iniciado en el 2020 y tiene el código fuente en github ainsuasty.com.
 La plantilla escogida de Hugo es coder y se ha ido adecuando de acuerdo al diseño que quería. Para la creación de la página web se tuvo como referencia el libro de Yihui Xie blogdown
 La página web contiene
-About: Información sobre mí y mis gustos personalesBlog (EN / ES): Explicación de conceptos de funciones en RProjects: Proyectos en los cuales he estado involucrado hasta ahora.</description>
+ About: Información sobre mí y mis gustos personales Blog (EN / ES): Explicación de conceptos de funciones en R Projects: Proyectos en los cuales he estado involucrado hasta ahora.</description>
     </item>
     
     <item>
@@ -25,10 +25,10 @@ La página web contiene
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/</guid>
-      <description>.blocks_style {font-weight: bold;background-color: whitesmoke;color: black;font-style: italic;font-family: Monospace;}Automatic reports through emails 📧Impress your boss with automatic reports in their emails.
+      <description>.blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Automatic reports through emails 📧 Impress your boss with automatic reports in their emails.
 Packages required:
-blastula: Package to send emailskeyring: Set credentials of email 🔐Rmardown: Create automatic reportsRead Rmarkdown fileset directory of your Rmarkdown file
-tempreport &amp;lt;- file.path(...) Render mail with tempfileemail &amp;lt;- blastula::render_email(input = tempreport)send email*credentials are explained at the end of the post!</description>
+blastula: Package to send emails keyring: Set credentials of email 🔐 Rmardown: Create automatic reports  Read Rmarkdown file set directory of your Rmarkdown file
+tempreport &amp;lt;- file.path(...)   Render mail with tempfile email &amp;lt;- blastula::render_email(input = tempreport)  send email *credentials are explained at the end of the post!</description>
     </item>
     
   </channel>

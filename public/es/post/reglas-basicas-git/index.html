@@ -10,27 +10,24 @@
     
 
     <meta name="author" content="Andres Felipe Insuasty Ch.">
-    <meta name="description" content="Reglas en Git 🎯{r colorize(&#34;Regla # 1:&#34;,&#34;blue&#34;)}El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.
+    <meta name="description" content="Reglas en Git 🎯 Regla #1: El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.
 En caso de saltarse la Regla #1, realizar paso #3.
-###Regla #2
-Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.
-Regla #3:Seguir el conventional commits del siguiente link:">
+ Regla #2: Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.
+ Regla #3: Seguir el conventional commits del siguiente link: conventional commits">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Reglas basicas Git"/>
-<meta name="twitter:description" content="Reglas en Git 🎯{r colorize(&#34;Regla # 1:&#34;,&#34;blue&#34;)}El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.
+<meta name="twitter:description" content="Reglas en Git 🎯 Regla #1: El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.
 En caso de saltarse la Regla #1, realizar paso #3.
-###Regla #2
-Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.
-Regla #3:Seguir el conventional commits del siguiente link:"/>
+ Regla #2: Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.
+ Regla #3: Seguir el conventional commits del siguiente link: conventional commits"/>
 
     <meta property="og:title" content="Reglas basicas Git" />
-<meta property="og:description" content="Reglas en Git 🎯{r colorize(&#34;Regla # 1:&#34;,&#34;blue&#34;)}El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.
+<meta property="og:description" content="Reglas en Git 🎯 Regla #1: El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.
 En caso de saltarse la Regla #1, realizar paso #3.
-###Regla #2
-Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.
-Regla #3:Seguir el conventional commits del siguiente link:" />
+ Regla #2: Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.
+ Regla #3: Seguir el conventional commits del siguiente link: conventional commits" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.ainsuasty.com/es/post/reglas-basicas-git/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-08-10T00:00:00&#43;00:00" />
@@ -161,43 +158,49 @@ Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.
 
 <div id="reglas-en-git" class="section level1">
 <h1>Reglas en <em>Git</em> 🎯</h1>
-<div id="r-colorizeregla-1blue" class="section level3">
-<h3><code>{r colorize("Regla # 1:","blue")}</code></h3>
+<div id="regla-1" class="section level2">
+<h2><span style="color: blue;">Regla #1:</span></h2>
 <p><em>El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.</em></p>
 <p>En caso de saltarse la Regla #1, realizar paso #3.</p>
-<p>###Regla #2</p>
+</div>
+<div id="regla-2" class="section level2">
+<h2><span style="color: blue;">Regla #2:</span></h2>
 <p>Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.</p>
 </div>
-<div id="regla-3" class="section level3">
-<h3>Regla #3:</h3>
-<p>Seguir el conventional commits del siguiente link:</p>
-<p><a href="https://www.conventionalcommits.org/en/v1.0.0/" class="uri">&lt;https://www.conventionalcommits.org/en/v1.0.0/&gt;</a></p>
+<div id="regla-3" class="section level2">
+<h2><span style="color: blue;">Regla #3:</span></h2>
+<p>Seguir el conventional commits del siguiente link:
+<a href="https://www.conventionalcommits.org/en/v1.0.0/">conventional commits</a></p>
+<div id="paso-1-traer-el-trabajo-de-otro-colaborador" class="section level3">
+<h3>Paso # 1: Traer el trabajo de otro colaborador</h3>
+<ul>
+<li><strong>git remote add <code>Colaborador</code> enlace_bifurcacion</strong>: Adiciona bifurcación a mi repositorio</li>
+<li><strong>git remote -v: </strong> bifurcaciones conectadas.</li>
+<li><strong>git fetch <code>Colaborador</code></strong>: Busca cambios en ramas del colaborador</li>
+<li><strong>git merge <code>Colaborador</code>/rama</strong>: Trae cambios de la rama del colaborador sin quitar mis cambios realizados</li>
+<li><strong>git rebase <code>upstream</code>/master</strong>: Trae los cambios del upstream/master eliminando mis cambios realizados.</li>
+</ul>
 </div>
-<div id="paso-1-traer-el-trabajo-de-otro-colaborador" class="section level2">
-<h2>Paso #1: Traer el trabajo de otro colaborador</h2>
-<p><strong>git remote -v :</strong> bifurcaciones conectadas</p>
-<p><strong>git remote add <em><code>Colaborador</code></em><u>enlace_bifurcacion</u> :</strong> Adiciona bifurcación a mi repositorio</p>
-<p><strong>git fetch <em><code>Colaborador</code></em> :</strong> Busco cambios mi repositorio con el repositorio del colaborador</p>
-<p><strong>git merge <em><code>Colaborador</code></em> /rama :</strong> Trae los cambios de la rama sin quitar mi trabajo realizado</p>
-<p><strong>git rebase</strong> <strong><em><code>upstream</code></em>/master :</strong> Trae los cambios del upstream/master eliminando mis cambios realizados</p>
+<div id="paso-2-cargar-modificaciones-a-bifurcaciones" class="section level3">
+<h3>Paso # 2: Cargar modificaciones a bifurcaciones</h3>
+<ul>
+<li><strong>git status</strong>: ilustra los cambios realizados</li>
+<li><strong>git add `ruta con cambio``: </strong> adiciona los cambios a realizar commit</li>
+<li><strong>git commit <code>presionar i para insertar</code></strong>: realizar comentarios de acuerdo a conventional commits,
+no olvidar referenciar el número del caso. <strong>para salir presionar</strong> <em>esc y :x</em></li>
+<li><strong>git push</strong>: Envía los cambios realizados a la bifurcación</li>
+<li><strong>Pull Request (PR) en github</strong></li>
+</ul>
 </div>
-<div id="paso-2-cargar-modificaciones-a-bifurcación" class="section level2">
-<h2><strong>Paso #2: Cargar modificaciones a bifurcación</strong></h2>
-<p>Una vez realizados los cambios:</p>
-<p><strong>git status :</strong> Se revisa los cambios realizados.</p>
-<p><strong>git add <code>ruta cambio</code> :</strong> Se adiciona el cambio a realizar commit</p>
-<p><strong>git commit, <code>enter</code>, <code>i</code> :</strong> realizar comentario de acuerdo a conventional commits, no olvidar referenciar el número del caso. <strong>para salir:</strong> <code>esc : x</code></p>
-<p><strong>git push:</strong> realiza el push a la bifurcación</p>
-<p><strong>Pull request en github:</strong> para realizar</p>
-</div>
-<div id="paso-3-git-reset-might-be-dangerous" class="section level2">
-<h2>Paso #3: GIT RESET (might be dangerous)</h2>
+<div id="paso-3-git-reset-tener-mucho-cuidado" class="section level3">
+<h3>Paso # 3: GIT RESET (tener mucho cuidado!)</h3>
 <p>Permite volver commits en el tiempo, se puede perder la información dependiendo de como se escriba el git reset.</p>
 <ul>
 <li><p>git whatchanged: Muestra los commits realizados, de aquí se debe tomar el #id del commit al que se requiere devolver.</p></li>
 <li><p>git reset –hard #idcommit: devuelve a la rama con ese commit perdiendo todo lo después realizado.</p></li>
 <li><p>git push -f: fuerza cambios con un push</p></li>
 </ul>
+</div>
 </div>
 </div>
 

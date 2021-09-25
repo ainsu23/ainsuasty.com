@@ -10,18 +10,18 @@
     
 
     <meta name="author" content="Andres Felipe Insuasty Ch.">
-    <meta name="description" content=".blocks_style {font-weight: bold;background-color: whitesmoke;color: black;font-style: italic;font-family: Monospace;}Procesos de excel realizados en R1. Guardar en varias pestañas de un libroDividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
-separar archivo por columnalibrary(dplyr)archivo &lt;-readxl::read_excel(glue::glue(&quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&quot;))Seleccionar columna a separar y convierte a listacolumna &lt;- archivo %&gt;% select(País) %&gt;% distinct() %&gt;% as.">
+    <meta name="description" content=".blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Procesos de excel realizados en R 1. Guardar en varias pestañas de un libro Dividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
+ separar archivo por columna  library(dplyr) archivo &lt;-readxl::read_excel( glue::glue(&quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&quot;))  Seleccionar columna a separar y convierte a lista  columna &lt;- archivo %&gt;% select(País) %&gt;% distinct() %&gt;% as.">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tips de procesos de Excel en R"/>
-<meta name="twitter:description" content=".blocks_style {font-weight: bold;background-color: whitesmoke;color: black;font-style: italic;font-family: Monospace;}Procesos de excel realizados en R1. Guardar en varias pestañas de un libroDividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
-separar archivo por columnalibrary(dplyr)archivo &lt;-readxl::read_excel(glue::glue(&quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&quot;))Seleccionar columna a separar y convierte a listacolumna &lt;- archivo %&gt;% select(País) %&gt;% distinct() %&gt;% as."/>
+<meta name="twitter:description" content=".blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Procesos de excel realizados en R 1. Guardar en varias pestañas de un libro Dividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
+ separar archivo por columna  library(dplyr) archivo &lt;-readxl::read_excel( glue::glue(&quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&quot;))  Seleccionar columna a separar y convierte a lista  columna &lt;- archivo %&gt;% select(País) %&gt;% distinct() %&gt;% as."/>
 
     <meta property="og:title" content="Tips de procesos de Excel en R" />
-<meta property="og:description" content=".blocks_style {font-weight: bold;background-color: whitesmoke;color: black;font-style: italic;font-family: Monospace;}Procesos de excel realizados en R1. Guardar en varias pestañas de un libroDividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
-separar archivo por columnalibrary(dplyr)archivo &lt;-readxl::read_excel(glue::glue(&quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&quot;))Seleccionar columna a separar y convierte a listacolumna &lt;- archivo %&gt;% select(País) %&gt;% distinct() %&gt;% as." />
+<meta property="og:description" content=".blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Procesos de excel realizados en R 1. Guardar en varias pestañas de un libro Dividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
+ separar archivo por columna  library(dplyr) archivo &lt;-readxl::read_excel( glue::glue(&quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&quot;))  Seleccionar columna a separar y convierte a lista  columna &lt;- archivo %&gt;% select(País) %&gt;% distinct() %&gt;% as." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.ainsuasty.com/es/post/tips-de-procesos-de-excel-en-r/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-08-23T00:00:00&#43;00:00" />

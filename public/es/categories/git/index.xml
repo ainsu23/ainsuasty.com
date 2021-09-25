@@ -13,11 +13,10 @@
       <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>http://www.ainsuasty.com/es/post/reglas-basicas-git/</guid>
-      <description>Reglas en Git 🎯{r colorize(&#34;Regla # 1:&#34;,&#34;blue&#34;)}El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.
+      <description>Reglas en Git 🎯 Regla #1: El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.
 En caso de saltarse la Regla #1, realizar paso #3.
-###Regla #2
-Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.
-Regla #3:Seguir el conventional commits del siguiente link:</description>
+ Regla #2: Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.
+ Regla #3: Seguir el conventional commits del siguiente link: conventional commits</description>
     </item>
     
   </channel>
