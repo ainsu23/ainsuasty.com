@@ -23,8 +23,6 @@ colorize <- function(x, color) {
 # Reglas en  *Git* 🎯
 ## `r colorize("Regla #1:","blue")`
 
-
-
 *El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.*
 
 En caso de saltarse la Regla #1, realizar paso #3.
@@ -65,6 +63,4 @@ Permite volver commits en el tiempo, se puede perder la información dependiendo
   - git push -f: fuerza cambios con un push
 
   
-
-
-
+Git Fin !
