@@ -1,9 +1,3 @@
-[submodule "themes/hugo-lithq2"]
-	path = themes/hugo-lithq2
-	url = https://github.com/yihui/hugo-lithium.git
-[submodule "git"]
-	path = git
-	url = https://github.com/yihui/hugo-lithium.git
 [submodule "themes/hugo-coder"]
 	path = themes/hugo-coder
 	url = https://github.com/luizdepra/hugo-coder.git
