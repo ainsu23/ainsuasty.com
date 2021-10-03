@@ -51,15 +51,6 @@ Aside
 ================================================================================
 ![Rmardown file](images/Foto_Marca_Personal.png)
 
-
-```{r}
-if(params$pdf_mode){
-  cat("View this CV online with links at _ainsuasty.com/cv/_")
-} else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://ainsuasty.com/cv/cv_AndrésInsuasty.pdf)")
-}
-```
-
 Contact {#contact}
 --------------------------------------------------------------------------------
 
