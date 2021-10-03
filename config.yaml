@@ -21,12 +21,12 @@ params:
   dateFormat: January 2, 2006
   description: Andres Insuasty's personal website
   enableTwemoji: yes
-  footerContent: Personal Website made with ❤️ from Rstudio cloud + hugo + Github + imagination and hardwork.
+  footerContent: Personal Website made with ❤️ R + hugo + Github + Netlify.
   hideColorSchemeToggle: no
   hideCopyright: no
   hideCredits: no
   hideFooter: no
-  info: Data Analyst|Data Scientist 
+  info: Data Analyst | Data Scientist 
   keywords: blog,developer,personal
   maxSeeAlsoItems: 5
   rtl: no
