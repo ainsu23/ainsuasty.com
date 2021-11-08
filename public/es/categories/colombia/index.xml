@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Colombia on AINSUASTY</title>
+    <link>http://www.ainsuasty.com/es/categories/colombia/</link>
+    <description>Recent content in Colombia on AINSUASTY</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 09 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/es/categories/colombia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crear GIFs con R: Evaluacion agricultura Colombia</title>
+      <link>http://www.ainsuasty.com/es/post/crear-gifs/</link>
+      <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/es/post/crear-gifs/</guid>
+      <description>.blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Aprende R con datos de Colombia !! En esta ocasión revisamos la evolución agropecuaria de Colombia por departamentos a partir del año 2006 hasta el año 2018. Los datos fueron extraídos de los Datos Abiertos de Colombia.
+R es un software estadístico OpenSource, esto quiere decir que el mundo entero está aportando al conocimiento y desarrollo de este mismo.</description>
+    </item>
+    
+  </channel>
+</rss>

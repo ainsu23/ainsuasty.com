@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blastula on AINSUASTY</title>
+    <link>http://www.ainsuasty.com/categories/blastula/</link>
+    <description>Recent content in Blastula on AINSUASTY</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 25 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/categories/blastula/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sending automatic emails with R 📧</title>
+      <link>http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/</link>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/</guid>
+      <description>.blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Automatic reports through emails 📧 Impress your boss with automatic reports in their emails.
+Packages required:
+blastula: Package to send emails keyring: Set credentials of email 🔐 Rmardown: Create automatic reports  Read Rmarkdown file set directory of your Rmarkdown file
+tempreport &amp;lt;- file.path(...)   Render mail with tempfile email &amp;lt;- blastula::render_email(input = tempreport)  send email *credentials are explained at the end of the post!</description>
+    </item>
+    
+  </channel>
+</rss>

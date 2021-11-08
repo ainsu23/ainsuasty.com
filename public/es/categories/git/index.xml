@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on AINSUASTY</title>
+    <link>http://www.ainsuasty.com/es/categories/git/</link>
+    <description>Recent content in Git on AINSUASTY</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/es/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reglas basicas Git</title>
+      <link>http://www.ainsuasty.com/es/post/reglas-basicas-git/</link>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/es/post/reglas-basicas-git/</guid>
+      <description>Reglas en Git 🎯 Regla #1: El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.
+En caso de saltarse la Regla #1, realizar paso #3.
+ Regla #2: Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.
+ Regla #3: Seguir el conventional commits del siguiente link: conventional commits</description>
+    </item>
+    
+  </channel>
+</rss>

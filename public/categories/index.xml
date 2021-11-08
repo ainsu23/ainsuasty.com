@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on AINSUASTY</title>
+    <link>http://www.ainsuasty.com/categories/</link>
+    <description>Recent content in Categories on AINSUASTY</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blogdown</title>
+      <link>http://www.ainsuasty.com/categories/blogdown/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>http://www.ainsuasty.com/categories/github/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>http://www.ainsuasty.com/categories/r/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rmarkdown</title>
+      <link>http://www.ainsuasty.com/categories/rmarkdown/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/rmarkdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shiny</title>
+      <link>http://www.ainsuasty.com/categories/shiny/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/shiny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OR</title>
+      <link>http://www.ainsuasty.com/categories/or/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/or/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blastula</title>
+      <link>http://www.ainsuasty.com/categories/blastula/</link>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/blastula/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>graphs</title>
+      <link>http://www.ainsuasty.com/categories/graphs/</link>
+      <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/graphs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidytuesday</title>
+      <link>http://www.ainsuasty.com/categories/tidytuesday/</link>
+      <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/tidytuesday/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Extract information</title>
+      <link>http://www.ainsuasty.com/categories/extract-information/</link>
+      <pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/extract-information/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
