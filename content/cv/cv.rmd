@@ -26,7 +26,10 @@ CV <- create_CV_object(
   data_location = "https://docs.google.com/spreadsheets/d/1jlcKboGFXHr2BKBhP78CkQomaAQ59M3iYRM9s1CGQJg/edit?usp=sharing",  
   pdf_mode = params$pdf_mode
 )
-cv1<-googlesheets4::read_sheet( "https://docs.google.com/spreadsheets/d/1jlcKboGFXHr2BKBhP78CkQomaAQ59M3iYRM9s1CGQJg/edit?usp=sharing",sheet = 1,skip = 1)
+cv1 <- googlesheets4::read_sheet(
+  "https://docs.google.com/spreadsheets/d/1jlcKboGFXHr2BKBhP78CkQomaAQ59M3iYRM9s1CGQJg/edit?usp=sharing",
+  sheet = 1,
+  skip = 1)
 
 ```
 
@@ -64,8 +67,12 @@ R packages used {#skills}
 
 ```{r,fig.height=3}
 
-cv1<-cv1 %>% select(description_2) %>% tidytext::unnest_tokens(word,description_2) %>% count(word,sort = TRUE) %>% 
+cv1 <- cv1 %>% 
+  select(description_2) %>% 
+  tidytext::unnest_tokens(word,description_2) %>% 
+  count(word,sort = TRUE) %>% 
   wordcloud2::wordcloud2(size=1.1,shape = 'pentagon',backgroundColor = "f7fbff") 
+
 htmlwidgets::saveWidget(cv1,"1.html",selfcontained = F)
 webshot::webshot("1.html","1.png",vwidth = 1200, vheight = 800, delay =10)
 ```
