@@ -1,0 +1,96 @@
+baseURL = "http://www.ainsuasty.com"
+title = "AINSUASTY"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+paginate = 20
+pygmentsStyle = "manni"
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
+enableEmoji = true
+
+[params]
+author = "Andres Felipe Insuasty Ch."
+description = "Andres Insuasty's personal website"
+keywords = "blog,developer,personal"
+info = "Data Analyst | Data Scientist"
+avatarURL = "images/Foto_Marca_Personal.jpeg"
+footerContent = "Personal Website made with ❤️ R + hugo + Github + Netlify."
+dateFormat = "January 2, 2006"
+hideFooter = false
+hideCredits = false
+hideCopyright = false
+since = 2021
+rtl = false
+colorScheme = "auto"
+hideColorSchemeToggle = false
+maxSeeAlsoItems = 5
+customCSS = []
+customJS = []
+customSCSS = []
+
+[params.googleTagManager]
+id = "UA-176122758-1"
+
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+[[params.social]]
+icon = "fa fa-github"
+name = "Github"
+url = "https://github.com/ainsu23"
+weight = 1
+
+[[params.social]]
+icon = "fa fa-twitter"
+name = "Twitter"
+url = "https://twitter.com/Afinsuasty/"
+weight = 2
+
+[[params.social]]
+icon = "fa fa-linkedin"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/afinsuasty/"
+weight = 3
+
+
+[languages.en]
+languageName = ":uk:"
+
+[[languages.en.menu.main]]
+name = "About"
+url = "about/"
+weight = 1
+
+[[languages.en.menu.main]]
+name = "Blog"
+url = "posts/"
+weight = 2
+
+[[languages.en.menu.main]]
+name = "Projects"
+url = "projects/"
+weight = 3
+
+[[languages.en.menu.main]]
+name = "Contact me"
+url = "contact/"
+weight = 4
+
+[[languages.en.menu.main]]
+name = "cv"
+url = "cv/"
+weight = 5
+
+
+[languages.es]
+languageName = ":es:"
+
+[[languages.es.menu.main]]
+name = "Blog"
+url = "post/"
+weight = 1
