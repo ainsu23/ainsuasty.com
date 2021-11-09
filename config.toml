@@ -94,3 +94,8 @@ languageName = ":es:"
 name = "Blog"
 url = "post/"
 weight = 1
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
