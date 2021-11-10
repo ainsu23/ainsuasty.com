@@ -12,10 +12,10 @@ pygmentsCodeFencesGuessSyntax: yes
 enableEmoji: yes
 googleAnalytics: "UA-176122758-1"
 params:
-  author: Andres Felipe Insuasty Ch. 
+  author: Andres Felipe Insuasty Ch.
   avatarurl : "images/Foto_Marca_Personal.jpeg"
   colorScheme: auto
-  customCSS: ["blocks_style.css"]
+  customCSS: []
   customJS: []
   customSCSS: []
   dateFormat: January 2, 2006
@@ -26,7 +26,7 @@ params:
   hideCopyright: no
   hideCredits: no
   hideFooter: no
-  info: Data Analyst | Data Scientist 
+  info: Data Analyst | Data Scientist
   keywords: blog,developer,personal
   maxSeeAlsoItems: 5
   rtl: no
@@ -66,8 +66,8 @@ languages:
         - name: Contact me
           url: contact/
           weight: 4
-        - name: cv
-          url: cv/
+        - name: resume
+          url: resume
           weight: 5
   es:
     languageName: ':es:'
@@ -76,3 +76,8 @@ languages:
         - name: Blog
           url: post/
           weight: 1
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

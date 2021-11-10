@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Andres Felipe Insuasty Ch.">
+    <meta name="description" content="Reglas en Git 🎯 Regla #1: El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.
+En caso de saltarse la Regla #1, realizar paso #3.
+ Regla #2: Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.
+ Regla #3: Seguir el conventional commits del siguiente link: conventional commits">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Reglas basicas Git"/>
+<meta name="twitter:description" content="Reglas en Git 🎯 Regla #1: El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.
+En caso de saltarse la Regla #1, realizar paso #3.
+ Regla #2: Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.
+ Regla #3: Seguir el conventional commits del siguiente link: conventional commits"/>
+
+    <meta property="og:title" content="Reglas basicas Git" />
+<meta property="og:description" content="Reglas en Git 🎯 Regla #1: El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.
+En caso de saltarse la Regla #1, realizar paso #3.
+ Regla #2: Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.
+ Regla #3: Seguir el conventional commits del siguiente link: conventional commits" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.ainsuasty.com/es/post/reglas-basicas-git/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-10T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-08-10T00:00:00&#43;00:00" />
+
+
+
+    <title>
+  Reglas basicas Git · AINSUASTY
+</title>
+
+    
+      <link rel="canonical" href="http://www.ainsuasty.com/es/post/reglas-basicas-git/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.a62599e5e4046a47ade603ec62166841ae88691cf26f4c28545b7888908720c2.css" integrity="sha256-piWZ5eQEaket5gPsYhZoQa6IaRzyb0woVFt4iJCHIMI=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.51c0e6757ae35097fbc2c4659dabf099de25f5230d514d8072e3d6abe9356626.css" integrity="sha256-UcDmdXrjUJf7wsRlnavwmd4l9SMNUU2AcuPWq&#43;k1ZiY=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.82.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/es">
+      AINSUASTY
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/es/post/">Blog</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="http://www.ainsuasty.com/">🇬🇧</a>
+              </li>
+            
+          
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://www.ainsuasty.com/es/post/reglas-basicas-git/">
+          Reglas basicas Git
+        </a>
+      </h1>
+    </header>
+
+    
+<script src="http://www.ainsuasty.com/es/post/reglas-basicas-git/index.es_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="reglas-en-git" class="section level1">
+<h1>Reglas en <em>Git</em> 🎯</h1>
+<div id="regla-1" class="section level2">
+<h2><span style="color: blue;">Regla #1:</span></h2>
+<p><em>El master debe siempre estar actualizado con upstream/master. En este, no se pueden hacer cambios ni commits. Mantener actualizado siguiente el paso #1.</em></p>
+<p>En caso de saltarse la Regla #1, realizar paso #3.</p>
+</div>
+<div id="regla-2" class="section level2">
+<h2><span style="color: blue;">Regla #2:</span></h2>
+<p>Se debe abrir una rama por cada issue, en esta rama se realiza el paso #2.</p>
+</div>
+<div id="regla-3" class="section level2">
+<h2><span style="color: blue;">Regla #3:</span></h2>
+<p>Seguir el conventional commits del siguiente link:
+<a href="https://www.conventionalcommits.org/en/v1.0.0/">conventional commits</a></p>
+<div id="paso-1-traer-el-trabajo-de-otro-colaborador" class="section level3">
+<h3>Paso # 1: Traer el trabajo de otro colaborador</h3>
+<ul>
+<li><strong>git remote add <code>Colaborador</code> enlace_bifurcacion</strong>: Adiciona bifurcación a mi repositorio</li>
+<li><strong>git remote -v: </strong> bifurcaciones conectadas.</li>
+<li><strong>git fetch <code>Colaborador</code></strong>: Busca cambios en ramas del colaborador</li>
+<li><strong>git merge <code>Colaborador</code>/rama</strong>: Trae cambios de la rama del colaborador sin quitar mis cambios realizados</li>
+<li><strong>git rebase <code>upstream</code>/master</strong>: Trae los cambios del upstream/master eliminando mis cambios realizados.</li>
+</ul>
+</div>
+<div id="paso-2-cargar-modificaciones-a-bifurcaciones" class="section level3">
+<h3>Paso # 2: Cargar modificaciones a bifurcaciones</h3>
+<ul>
+<li><strong>git status</strong>: ilustra los cambios realizados</li>
+<li><strong>git add `ruta con cambio``: </strong> adiciona los cambios a realizar commit</li>
+<li><strong>git commit <code>presionar i para insertar</code></strong>: realizar comentarios de acuerdo a conventional commits,
+no olvidar referenciar el número del caso. <strong>para salir presionar</strong> <em>esc y :x</em></li>
+<li><strong>git push</strong>: Envía los cambios realizados a la bifurcación</li>
+<li><strong>Pull Request (PR) en github</strong></li>
+</ul>
+</div>
+<div id="paso-3-git-reset-tener-mucho-cuidado" class="section level3">
+<h3>Paso # 3: GIT RESET (tener mucho cuidado!)</h3>
+<p>Permite volver commits en el tiempo, se puede perder la información dependiendo de como se escriba el git reset.</p>
+<ul>
+<li><p>git whatchanged: Muestra los commits realizados, de aquí se debe tomar el #id del commit al que se requiere devolver.</p></li>
+<li><p>git reset –hard #idcommit: devuelve a la rama con ese commit perdiendo todo lo después realizado.</p></li>
+<li><p>git push -f: fuerza cambios con un push</p></li>
+</ul>
+<p>Git Fin !</p>
+</div>
+</div>
+</div>
+
+  </article>
+</section>
+
+  
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Personal Website made with ❤️ R + hugo + Github + Netlify.</p>
+      
+      
+        ©
+        
+        2021
+         Andres Felipe Insuasty Ch. 
+      
+      
+         · 
+        Desarrollado por <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-176122758-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>
