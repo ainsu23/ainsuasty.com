@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://www.ainsuasty.com/</loc>
-    <lastmod>2021-08-26T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -14,6 +14,12 @@
                 hreflang="en"
                 href="http://www.ainsuasty.com/"
                 />
+  </url><url>
+    <loc>http://www.ainsuasty.com/cv/cv/</loc>
+    <lastmod>2021-11-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.ainsuasty.com/cv/</loc>
+    <lastmod>2021-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.ainsuasty.com/projects/ainsuasty-com/</loc>
     <lastmod>2021-08-26T00:00:00+00:00</lastmod>
@@ -116,6 +122,8 @@
     <loc>http://www.ainsuasty.com/posts/extract-information-with-encoding/</loc>
     <lastmod>2021-04-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://www.ainsuasty.com/resume/readme/</loc>
+  </url><url>
     <loc>http://www.ainsuasty.com/about/</loc>
   </url><url>
     <loc>http://www.ainsuasty.com/authors/</loc>
@@ -131,6 +139,8 @@
                 />
   </url><url>
     <loc>http://www.ainsuasty.com/contact/</loc>
+  </url><url>
+    <loc>http://www.ainsuasty.com/resume/</loc>
   </url><url>
     <loc>http://www.ainsuasty.com/series/</loc>
     <xhtml:link

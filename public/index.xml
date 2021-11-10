@@ -6,7 +6,21 @@
     <description>Recent content on AINSUASTY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Andrés Felipe Insuasty Ch.&#39;s CV</title>
+      <link>http://www.ainsuasty.com/cv/cv/</link>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/cv/cv/</guid>
+      <description>:root{ --decorator-outer-offset-left: -6.5px; }  Aside Rmardown file
+ Contact   afinsuasty@hotmail.com  Afinsuasty  github.com/ainsu23  ainsuasty.com  linkedin.com/in/afinsuasty/  +57 3172209858   R packages used 
+ Disclaimer The source code is available https://github.com/ainsu23/resume.
+Last updated on 2021-11-07.
+
+  Main Andrés Felipe Insuasty Ch. I have automated processes and reports to take key decisions using R. Data analyst who wants to be a great data scientist.</description>
+    </item>
+    
     <item>
       <title>ainsuasty.com</title>
       <link>http://www.ainsuasty.com/projects/ainsuasty-com/</link>
@@ -68,6 +82,15 @@ tempreport &amp;lt;- file.path(...)   Render mail with tempfile email &amp;lt;- 
       <guid>http://www.ainsuasty.com/posts/extract-information-with-encoding/</guid>
       <description>Are you a non English R user? In my case, Spanish language has the following letters: á, é, í, ó, ú, ü and ñ. This letters are saved different depending on the encoding (computation language) of the table you are extracting the data. And reading them might cause some headaches.
 Tips 💡 To avoid having strange characters when reading the previews letters, make sure you are extracting the data with the same encoding of the table from your database (check properties of the table) or excel file.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://www.ainsuasty.com/resume/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/resume/readme/</guid>
+      <description>resume    Generated using Rmarkdown, the pagedown package and googlesheet. Instructions in the following page: http://nickstrayer.me/datadrivencv/</description>
     </item>
     
     <item>

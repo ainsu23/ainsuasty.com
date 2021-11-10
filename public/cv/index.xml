@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cvs on AINSUASTY</title>
+    <link>http://www.ainsuasty.com/cv/</link>
+    <description>Recent content in Cvs on AINSUASTY</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 07 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/cv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Andrés Felipe Insuasty Ch.&#39;s CV</title>
+      <link>http://www.ainsuasty.com/cv/cv/</link>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/cv/cv/</guid>
+      <description>:root{ --decorator-outer-offset-left: -6.5px; }  Aside Rmardown file
+ Contact   afinsuasty@hotmail.com  Afinsuasty  github.com/ainsu23  ainsuasty.com  linkedin.com/in/afinsuasty/  +57 3172209858   R packages used 
+ Disclaimer The source code is available https://github.com/ainsu23/resume.
+Last updated on 2021-11-07.
+
+  Main Andrés Felipe Insuasty Ch. I have automated processes and reports to take key decisions using R. Data analyst who wants to be a great data scientist.</description>
+    </item>
+    
+  </channel>
+</rss>
