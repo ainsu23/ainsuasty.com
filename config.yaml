@@ -12,7 +12,7 @@ pygmentsCodeFencesGuessSyntax: yes
 enableEmoji: yes
 googleAnalytics: "UA-176122758-1"
 params:
-  author: Andres Felipe Insuasty Ch. 
+  author: Andres Felipe Insuasty Ch.
   avatarurl : "images/Foto_Marca_Personal.jpeg"
   colorScheme: auto
   customCSS: []
@@ -26,7 +26,7 @@ params:
   hideCopyright: no
   hideCredits: no
   hideFooter: no
-  info: Data Analyst | Data Scientist 
+  info: Data Analyst | Data Scientist
   keywords: blog,developer,personal
   maxSeeAlsoItems: 5
   rtl: no
@@ -67,7 +67,7 @@ languages:
           url: contact/
           weight: 4
         - name: resume
-          url: resume/
+          url: resume
           weight: 5
   es:
     languageName: ':es:'
