@@ -3310,10 +3310,20 @@ figure {
 .avatar img {
   width: 20rem;
   height: auto;
-  border-radius: 50%; }
+  border-radius: 50%;
+  animation-name: movimiento;
+  animation-duration: 5s; }
   @media only screen and (max-width: 768px) {
     .avatar img {
       width: 10rem; } }
+@keyframes movimiento {
+  0% {
+    top: 0px; }
+  50% {
+    top: 50px; }
+  100% {
+    top: 0px; } }
+
 .list ul {
   margin: 3.2rem 0 3.2rem 0;
   list-style: none;

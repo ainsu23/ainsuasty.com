@@ -13,10 +13,10 @@
       <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>http://www.ainsuasty.com/projects/ainsuasty-com/</guid>
-      <description>Mi página Web ainsuasty.com 👨‍💼 El presente proyecto fue iniciado en el 2020 y tiene el código fuente en github ainsuasty.com.
-La plantilla escogida de Hugo es coder y se ha ido adecuando de acuerdo al diseño que quería. Para la creación de la página web se tuvo como referencia el libro de Yihui Xie blogdown
-La página web contiene
- About: Información sobre mí y mis gustos personales Blog (EN / ES): Explicación de conceptos de funciones en R Projects: Proyectos en los cuales he estado involucrado hasta ahora.</description>
+      <description>My own web page ainsuasty.com 👨‍💼 I started building my webpage on 2020. All source code is on github ainsuasty.com.
+The template hugo-coder was chosen from Hugo. A forked version is on my github where I changed the family-font from fonts.google.com. This forked version is a submodule of the ainsuasty.com repository.
+A good guideline to create smart websites is the book written by Yihui Xie blogdown.
+ainsuasty.com contains:</description>
     </item>
     
     <item>
