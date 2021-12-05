@@ -63,7 +63,7 @@ languages:
         - name: Projects
           url: projects/
           weight: 3
-        - name: Shiny 
+        - name: Shiny apps
           url: Shiny/
           weight: 4
         - name: Contact me
