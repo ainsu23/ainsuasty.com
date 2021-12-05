@@ -12,14 +12,14 @@ pygmentsCodeFencesGuessSyntax: yes
 enableEmoji: yes
 googleAnalytics: "UA-176122758-1"
 params:
-  author: Andres Felipe Insuasty Ch.
+  author: Andrés Felipe Insuasty Ch.
   avatarurl : "images/Foto_Marca_Personal.jpeg"
   colorScheme: auto
   customCSS: []
   customJS: []
   customSCSS: []
   dateFormat: January 2, 2006
-  description: Andres Insuasty's personal website
+  description: Andrés Insuasty's personal website
   enableTwemoji: yes
   footerContent: Personal Website made with ❤️ R + hugo + Github + Netlify.
   hideColorSchemeToggle: no
@@ -63,12 +63,15 @@ languages:
         - name: Projects
           url: projects/
           weight: 3
+        - name: Shiny 
+          url: Shiny/
+          weight: 4
         - name: Contact me
           url: contact/
-          weight: 4
+          weight: 5
         - name: resume
           url: resume
-          weight: 5
+          weight: 6
   es:
     languageName: ':es:'
     menu:
