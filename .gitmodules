@@ -1,6 +1,3 @@
-[submodule "content/resume"]
-	path = content/resume
-	url = https://github.com/ainsu23/resume.git
 [submodule "themes/hugo-coder"]
 	path = themes/hugo-coder
 	url = https://github.com/ainsu23/hugo-coder.git
