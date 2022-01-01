@@ -1,4 +1,4 @@
-# [ainsuasty.com](ainsuasty.com).
+# [ainsuasty.com](https://ainsuasty.com/).
 Este repositorio contiene el código construido desde blogdown en R para construir el blog personal [ainsuasty.com](https://ainsuasty.com/).
 
 ## Submodules
