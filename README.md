@@ -1,8 +1,5 @@
-# ainsuasty.com
-Espacio destinado para almacenar el código de mi blog personal, dónde brindo algunos tips para trabajar en R.
-
-## Public
-Contiene archivos de la página web ainsuasty.com
+# [ainsuasty.com](ainsuasty.com).
+Este repositorio contiene el código construido desde blogdown en R para construir el blog personal [ainsuasty.com](ainsuasty.com).
 
 ## Submodules
 - resume/ : Redirige a repositorio *resume* que usa mi paquete propio de _datadrivencv_ 
