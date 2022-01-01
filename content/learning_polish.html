@@ -1,0 +1,37 @@
+---
+slug: learning-polish
+title: "Learning Polish language"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>Is Polish difficult?
+It migth be, but when you have a goal declared for 2022, you find the best and
+fun way to do it. My goal for this 2022 is to communicate with my parents in law
+in polish when they are visiting us in Colombia this june 2022.</p>
+<p>How will I make ?
+I will practice speaking with my girlfriend Klaudia.
+I will learn vocabulary using R.</p>
+<p><code>starting_date &lt;- "2022-01-14"</code></p>
+<pre><code>## $greetings
+## [1] &quot;cześć&quot;       &quot;pa&quot;          &quot;dzien dobry&quot; &quot;dobranoc&quot;    &quot;dowidzenia&quot; 
+## 
+## $food
+##  [1] &quot;chleb&quot;      &quot;jablko&quot;     &quot;mleko&quot;      &quot;kabanos&quot;    &quot;sok&quot;       
+##  [6] &quot;kapusta&quot;    &quot;pomarancza&quot; &quot;ciasto&quot;     &quot;kawa&quot;       &quot;woda&quot;      
+## [11] &quot;wódka&quot;     
+## 
+## $animals
+## [1] &quot;pies&quot;      &quot;kot&quot;       &quot;biedronka&quot;
+## 
+## $most_used
+## [1] &quot;nie&quot;             &quot;tak&quot;             &quot;dziekuje&quot;        &quot;prosze&quot;         
+## [5] &quot;troszke/ troche&quot; &quot;Przepraszam&quot;     &quot;drogo&quot;          
+## 
+## $tranportation
+## [1] &quot;samochód&quot; &quot;lot&quot;      &quot;metro&quot;    &quot;autobus&quot;</code></pre>
+<ul>
+<li><p>Number of learned by category: <code>{r echo=FALSE} purrr::map(words_learned, length) %&gt;% unlist()</code></p></li>
+<li><p>Total words learned: <code>{r echo=FALSE} purrr::map(words_learned, length) %&gt;% unlist() %&gt;% sum()</code></p></li>
+</ul>
