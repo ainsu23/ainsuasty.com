@@ -62,7 +62,6 @@ languages:
           weight: 2
         - name: My R world 
           identifier: rworld
-          url: r-world/
           weight: 3
         - name: Blog
           url: posts/
