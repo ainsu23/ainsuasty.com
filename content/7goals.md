@@ -1,0 +1,11 @@
+Professional:
+- Upload 5 shiny apps to [shiny portfolio](https://afinsuasty.shinyapps.io/mastering_shiny/).
+- Read, solver and learn with [R for Data science](https://r4ds.had.co.nz/)
+- Read, solver and learn with [JavaScript for R](https://book.javascript-for-r.com/)
+- Learn Machine learning with Tidy Modelling [tidyModels](https://www.tmwr.org/)  And [Hands on machine learning](https://bradleyboehmke.github.io/HOML/ )
+
+Personal:
+- Learn as much Polish as I can until June 2022. :smiley:
+- Decrease 10 kgs :fire:. Up to 10 January, my weigth is 83.4 kgs.
+- Going to dancing clases :dancers:
+- *extra:* secret :innocent:
