@@ -1,17 +1,9 @@
 ---
-slug: rworld 
+slug: rworld
 title: "My work developed in R "
 ---
 
 Check my:
-blogging is fun            |  Projects
-:-------------------------:|:-------------------------:
-[![](/images/blogging.jpg)](https://ainsuasty.com/posts/) |  [![](/images/projects.jpg)](https://ainsuasty.com/projects/)
-
-
-[bloging is fun, check mine](https://ainsuasty.com/posts/)
-
-[Projects](https://ainsuasty.com/projects/)
-
-[Shiny Portfolio](https://ainsuasty.com/shiny/)
-
+blogging is fun            |  Projects                 | Shiny Portfolio
+:-------------------------:|:-------------------------:|:-------------------------:
+<a href = "https://ainsuasty.com/posts/"><img src = "/images/blogging.jpg" width = "800"></a> | [![](/images/projects.jpg)](https://ainsuasty.com/projects/) | <a href = "https://ainsuasty.com/shiny/"><img src = "/images/shiny.png" width = "420"></a>
