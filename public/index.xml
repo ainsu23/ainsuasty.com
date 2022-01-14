@@ -13,10 +13,10 @@
       <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>http://www.ainsuasty.com/projects/ainsuasty-com/</guid>
-      <description>Mi página Web ainsuasty.com 👨‍💼 El presente proyecto fue iniciado en el 2020 y tiene el código fuente en github ainsuasty.com.
-La plantilla escogida de Hugo es coder y se ha ido adecuando de acuerdo al diseño que quería. Para la creación de la página web se tuvo como referencia el libro de Yihui Xie blogdown
-La página web contiene
- About: Información sobre mí y mis gustos personales Blog (EN / ES): Explicación de conceptos de funciones en R Projects: Proyectos en los cuales he estado involucrado hasta ahora.</description>
+      <description>My own web page ainsuasty.com 👨‍💼 I started building my webpage on 2020. All source code is on github ainsuasty.com.
+The template hugo-coder was chosen from Hugo. A forked version is on my github where I changed the family-font from fonts.google.com. This forked version is a submodule of the ainsuasty.com repository.
+A good guideline to create smart websites is the book written by Yihui Xie blogdown.
+ainsuasty.com contains:</description>
     </item>
     
     <item>
@@ -28,15 +28,6 @@ La página web contiene
       <description>  Mi participación en el proyecto AIS se puede observar en el siguiente link de github proyais/aisalud
 Colaboración en:
  Mantenimiento y adición de modulos de Shiny Diseño e implmentación de estructuras JSON para actualización de información Documentación de funciones con roxigen Pruebas funcionales de la herramienta  </description>
-    </item>
-    
-    <item>
-      <title>Optimization - Assign solution with R ☑️👨 ✖️👨</title>
-      <link>http://www.ainsuasty.com/posts/assign-solution-with-ompr-r/</link>
-      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.ainsuasty.com/posts/assign-solution-with-ompr-r/</guid>
-      <description>  </description>
     </item>
     
     <item>
@@ -71,6 +62,17 @@ Tips 💡 To avoid having strange characters when reading the previews letters, 
     </item>
     
     <item>
+      <title></title>
+      <link>http://www.ainsuasty.com/7goals2022/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/7goals2022/</guid>
+      <description>Professional:
+ Upload 5 shiny apps to shiny portfolio. Read, solver and learn with R for Data science Read, solver and learn with JavaScript for R Learn Machine learning with Tidy Modelling tidyModels And Hands on machine learning  Personal:
+ Learn as much Polish as I can until June 2022. 😃 Decrease 10 kgs 🔥. Up to 10 January, my weigth is 83.4 kgs. Going to dancing clases 👯‍♀️ extra: secret 😇  </description>
+    </item>
+    
+    <item>
       <title>About me 😄 </title>
       <link>http://www.ainsuasty.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -87,6 +89,26 @@ Tips 💡 To avoid having strange characters when reading the previews letters, 
       <guid>http://www.ainsuasty.com/contact/</guid>
       <description>Follow me on twitter: @Afinsuasty 🐦
 Write me an email: afinsuasty@hotmail.com 📧</description>
+    </item>
+    
+    <item>
+      <title>My work developed in R </title>
+      <link>http://www.ainsuasty.com/rworld/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/rworld/</guid>
+      <description>Check my:
+   blogging is fun Projects Shiny Portfolio           </description>
+    </item>
+    
+    <item>
+      <title>Shiny portfolio  📖 </title>
+      <link>http://www.ainsuasty.com/shiny/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/shiny/</guid>
+      <description>This section shows some of my shiny apps created overtime.
+ What have I learned from mastering shiny ?: contains some excercises from the chapters stored in one app. Bingo  </description>
     </item>
     
   </channel>
