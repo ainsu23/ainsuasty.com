@@ -76,6 +76,10 @@ languages:
           url: Shiny/
           parent: rworld
           weight: 32
+        - name: learning polish 
+          url: learning_polish/
+          parent: 7 goals 2022 
+          weight: 33
         - name: Contact me
           url: contact/
           weight: 4
