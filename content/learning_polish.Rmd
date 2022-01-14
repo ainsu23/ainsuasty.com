@@ -26,6 +26,6 @@ words_learned <- list(
 )
 ```
 
-- Numbers of learned by category: ```{r echo=FALSE} purrr::map(words_learned, length) %>% unlist()```
+- Numbers of words learned by category: `r purrr::map(words_learned, length) %>% unlist()`
 
-- Total words learned: `{r echo=FALSE} purrr::map(words_learned, length) %>% unlist() %>% sum()`
+- Total words learned: `r purrr::map(words_learned, length) %>% unlist() %>% sum()`
