@@ -72,10 +72,14 @@ languages:
           url: projects/
           parent: rworld
           weight: 31
-        - name: Shiny apps
-          url: Shiny/
+        - name: shiny apps
+          url: shiny/
           parent: rworld
           weight: 32
+        - name: learning polish 
+          url: learning_polish/
+          parent: 7goals2022 
+          weight: 33
         - name: Contact me
           url: contact/
           weight: 4
