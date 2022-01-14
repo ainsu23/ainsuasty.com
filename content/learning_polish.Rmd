@@ -14,7 +14,7 @@ I will learn vocabulary using R.
 
 `starting_date <- "2022-01-14"`
 
-```{r echo=FALSE}
+```{r}
 words_learned <- list(
         greetings = c("cześć", "pa", "dzien dobry", "dobranoc", "dowidzenia"),
         food = c("chleb", "jablko", "mleko", "kabanos", "sok", "kapusta",
@@ -24,11 +24,8 @@ words_learned <- list(
                 "Przepraszam", "drogo"),
         tranportation = c("samochód", "lot", "metro", "autobus")
 )
-print(words_learned)
 ```
 
 - Numbers of learned by category: ```{r echo=FALSE} purrr::map(words_learned, length) %>% unlist()```
 
 - Total words learned: `{r echo=FALSE} purrr::map(words_learned, length) %>% unlist() %>% sum()`
-
-
