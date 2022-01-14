@@ -57,21 +57,31 @@ languages:
         - name: About
           url: about/
           weight: 1
+        - name: 7 goals 2022
+          url: 7goals2022/
+          weight: 2
+        - name: My R world 
+          identifier: rworld
+          url: rworld/
+          weight: 3
         - name: Blog
           url: posts/
-          weight: 2
+          parent: rworld
+          weight: 30
         - name: Projects
           url: projects/
-          weight: 3
+          parent: rworld
+          weight: 31
         - name: Shiny apps
           url: Shiny/
-          weight: 4
+          parent: rworld
+          weight: 32
         - name: Contact me
           url: contact/
-          weight: 5
+          weight: 4
         - name: resume
           url: resume
-          weight: 6
+          weight: 5
   es:
     languageName: ':es:'
     menu:
