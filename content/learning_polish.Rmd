@@ -3,14 +3,9 @@ slug: learning-polish
 title: "Learning Polish language"
 ---
 
-Is Polish difficult?
-It migth be, but when you have a goal declared for 2022, you find the best and
-fun way to do it. My goal for this 2022 is to communicate with my parents in law
-in polish when they are visiting us in Colombia this june 2022.
+Is Polish difficult? It migth be, but when you have a goal declared for 2022, you find the best and fun way to do it. My goal for this 2022 is to communicate with my parents in law in polish when they are visiting us in Colombia this june 2022.
 
-How will I make ?
-I will practice speaking with my girlfriend Klaudia.
-I will learn vocabulary using R.
+How will I make ? I will practice speaking with my girlfriend Klaudia. I will learn vocabulary using R.
 
 `starting_date <- "2022-01-14"`
 
@@ -26,6 +21,8 @@ words_learned <- list(
 )
 ```
 
-- Numbers of words learned by category: `r purrr::map(words_learned, length) %>% unlist()`
+-   Numbers of words learned by category:
 
-- Total words learned: `r purrr::map(words_learned, length) %>% unlist() %>% sum()`
+    `r purrr::map(words_learned, length) %>% as.data.frame(row.names = "") %>% DT::datatable()`
+
+-   Total words learned: `r purrr::map(words_learned, length) %>% unlist() %>% sum()`
