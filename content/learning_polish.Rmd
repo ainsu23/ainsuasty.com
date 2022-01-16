@@ -23,6 +23,6 @@ words_learned <- list(
 
 -   Numbers of words learned by category:
 
-    `r purrr::map(words_learned, length) %>% as.data.frame(row.names = "") %>% DT::datatable()`
+    `r purrr::map(words_learned, length) %>% as.data.frame(row.names = "") %>% DT::datatable(options = list(paging = FALSE, searching = FALSE))`
 
 -   Total words learned: `r purrr::map(words_learned, length) %>% unlist() %>% sum()`
