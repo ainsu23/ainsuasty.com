@@ -1,9 +1,12 @@
 ---
 slug: Shiny
 title: "Shiny portfolio  📖 "
+runtime: shiny
+output: html_document
 ---
 
 This section shows some of my shiny apps created overtime.
 
 1. [What have I learned from mastering shiny ?](https://afinsuasty.shinyapps.io/mastering_shiny/): contains some excercises from the chapters stored in one app.
-2. Bingo
+<iframe height="800" width="100%" frameborder="no" src="https://afinsuasty.shinyapps.io/mastering_shiny/"> </iframe>
+
