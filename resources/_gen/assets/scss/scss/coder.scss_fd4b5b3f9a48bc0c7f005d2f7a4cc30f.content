@@ -3314,6 +3314,18 @@ figure {
   @media only screen and (max-width: 768px) {
     .avatar img {
       width: 10rem; } }
+.avatar:hover {
+  border-radius: 0%;
+  animation-duration: 5s; }
+
+@keyframes movimiento {
+  0% {
+    top: 0px; }
+  50% {
+    top: 50px; }
+  100% {
+    top: 0px; } }
+
 .list ul {
   margin: 3.2rem 0 3.2rem 0;
   list-style: none;
