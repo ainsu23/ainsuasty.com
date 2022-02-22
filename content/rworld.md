@@ -1,9 +1,286 @@
 ---
-slug: rworld
-title: "My work developed in R "
 ---
 
-Check my:
-blogging is fun            |  Projects                 | Shiny Portfolio
-:-------------------------:|:-------------------------:|:-------------------------:
-<a href = "https://ainsuasty.com/posts/"><img src = "/images/blogging.jpg" width = "800"></a> | [![](/images/projects.jpg)](https://ainsuasty.com/projects/) | <a href = "https://ainsuasty.com/shiny/"><img src = "/images/shiny.png" width = "420"></a>
+<style type="text/css">
+
+.wrapper_modificado {
+  position: absolute;
+  bottom: 110%;
+  left: 100%;
+  width: 300px;
+  height: 500px;
+  perspective: 900px;
+}
+
+.contenedor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+
+#c0 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+  z-index: 300;
+  box-shadow: 0px 20px 100px #555;
+}
+
+#c1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 100%;
+  z-index: 0;
+}
+
+#c2 {
+  left: -100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+.contenedor:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(to top, #eba65b 30%, #d99267 100%);
+}
+
+#i1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+
+#i2 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+
+span {
+  position: absolute;
+  top: 0%;
+  left: 55%;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  height: 50%;
+  left: 0%;
+  width: 100%;
+}
+
+.sun1 {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 10px #fff;
+}
+
+.st4 {
+  fill: #f8c56f;
+  opacity: 1;
+}
+
+.st5,
+.st7 {
+  fill: #fff;
+}
+
+#sh2 {
+  opacity: 0.5;
+}
+
+#sh3 {
+  opacity: 0.3;
+}
+
+.st6 {
+  fill: #59476f;
+}
+
+.st10 {
+  fill: #c5a7e5;
+  stroke: #222;
+}
+
+.st11 {
+  stroke: #212121;
+  opacity: 0.5;
+}
+
+#sh1 {
+  fill: #f8c56f;
+  opacity: 0.4;
+}
+
+.st0 {
+  fill: #a25a62;
+  stroke: none;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: none;
+  stroke: #a25a62;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.st2 {
+  fill: #cd775c;
+}
+
+.st3 {
+  fill: #fff;
+  opacity: 0.3;
+}
+
+.story {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  height: 55%;
+  width: 100%;
+  background: linear-gradient(to bottom, #eba65b 0%, #d99267 40%);
+  z-index: 30;
+}
+
+#s1 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 100%);
+}
+
+#s2 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 120%);
+}
+
+.info {
+  position: absolute;
+  top: 10%;
+}
+
+h4 {
+  color: #111;
+  position: fixed;
+  top: 70%;
+  left: 0%;
+  letter-spacing: 2px;
+  z-index: 30;
+}
+
+h1 {
+  color: #111;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  letter-spacing: 2px;
+}
+
+.page {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  left: 0%;
+  height: 20%;
+  z-index: 30;
+}
+
+@keyframes simple {
+  50% {
+    transform: translateX(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes simple1 {
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+</style>
+
+<html>
+<body>
+<h1> 3 World places to visit this year</h1>
+<h4> clic on image to visit </h4>
+<div class="wrapper_modificado">
+    <div class="contenedor" id="c0">
+        <div class="image" id="i0">
+            <div class="city">
+            <a href = "https://ainsuasty.com/posts/"><img src = "/images/blog.jpg" width = "800"></a>
+            </div>
+        </div>
+        <div class="story" id="s2">
+            <div class="info">
+                <h3> Blogging is fun</h3>
+                <p>R posts explaining technical concept</p>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor" id="c1">
+        <div class="image" id="i1">
+            <div class="city">
+            <a href = "https://ainsuasty.com/projects/"><img src = "/images/projects.png" width = "420"></a>
+            </div>
+        </div>
+        <div class="story" id="s2">
+            <div class="info">
+                <h3> Projects </h3>
+                <p>R Projects where I have been involved.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor" id="c2">
+        <div class="image" id="i2">
+            <div class="city">
+            <a href = "https://ainsuasty.com/shiny/"><img src = "/images/shiny.png" width = "420"></a>
+            </div>
+        </div>
+        <div class="story" id="s2">
+            <div class="info">
+                <h3> Shiny portfolio </h3>
+                <p> Apps build in shiny </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
