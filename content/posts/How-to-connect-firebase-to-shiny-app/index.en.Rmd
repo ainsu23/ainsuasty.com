@@ -1,0 +1,154 @@
+---
+title: "How to interact with firebase from a shiny app"
+author: 'Andrés Felipe Insuasty Ch.'
+date: '2022-03-12'
+slug: How to connect firebase to shiny app
+categories: ["Extract information", "firebase", "shiny"]
+tags: ["shiny", "firebase"]
+---
+
+At the planning phase of creating a shiny app you would find the importance of
+having storing data and interact with the stored system.
+
+You might have interaction with data bases using `dbplyr`, `DBI`, among others
+packages. Reading this blog you will find how to use `httr` in order to access
+or modify stored data in firebase.
+
+## Interacting with firebase from R
+Firstly, you need to have all setup in firebase so R can connect trough API,
+we recommend to store the API_KEY, firebase_url and password in the `.Renviron`
+file in the root of the app (where ui.R and server.R are stored or app.R).
+
+Secondly, it is very important to be familiar with JSON structures in order to
+design how you are going to store your data in firebase.
+
+From previous, you might want to bring the information, update, delete, insert,
+among others. Let's build together the select.
+
+### Define JSON structure to store data
+In my learning polish app, I design to have a list of words, this list would
+contains a list of categories, and each of this would have the register with
+the word, translation in spanish and date of insertion in a simple text.
+
+For the purpose of the blog I am going to use a fragment of data from my
+learning polish shiny app.
+
+```{JSON eval = FALSE}
+{
+  "words" : {
+    "animals" : [
+        "pies: perro: 2022-01-23",
+        "kot: gato: 2022-01-23",
+        "biedronka: mariquita: 2022-01-23",
+        "Ptak: Pájaro: 2022-01-23",
+        "Komar: Mosquito: 2022-01-23", ],
+    "clothes" : [
+        "buty: zapatos:2022-01-26",
+        "spodnie: pantalón: 2022-01-30",
+        "sweter: sueter: 2022-02-22",
+        "krawat: corbata: 2022-02-22",
+        "koszula: camisa: 2022-02-22" ],
+  }
+}
+```
+
+### Selecting data from firebase
+The firebase url given by google is the place where your data is stored. It will
+look somethis as followwing:
+"https://name-hash_given_firebase-default-rtdb.firebaseio.com/"
+
+If you would like to access to the words inside the category clothes, you might
+add the list words and clothes in the previous link, as follors:
+
+"https://name-hash_given_firebase-default-rtdb.firebaseio.com/words/clothes"
+
+In the documentary from firebase, you can find that you need to add .json when
+you are using an API (I invite you to read documentation to more detail).
+
+```{r eval = FALSE}
+select_words <- function(categories) {
+    words <- httr::content(
+      httr::GET(
+        paste0(
+          Sys.getenv("FIREBASE_URL"), "/words/", categories, ".json")
+      )
+    ) %>%
+    purrr::flatten() %>%
+    unlist()
+
+  return(words)
+}
+```
+
+```{r eval = FALSE}
+select_categories <- function() {
+  categories <- content(GET(
+    paste0(Sys.getenv("FIREBASE_URL"), "/words/.json")
+  ))
+
+  return(categories)
+}
+```
+### Insert data to firebase:
+
+For inserting data you can use the function PUT from `httr`. Into words variable
+we bring the words from category so we can add the new word to already stored
+words and converted to json with `jsonlite` package.
+
+```{r eval = FALSE}
+add_words <- function(categories, word) {
+  if (word != "") {
+    words <- select_words(categories)
+    body <- jsonlite::toJSON(c(words, word),
+      pretty = TRUE
+    )
+
+    response <- httr::PUT(
+      paste0(Sys.getenv("FIREBASE_URL"), "/words/", categories, ".json"),
+      body = body
+    )
+  }
+}
+```
+
+### Delete data stored in firebase from R.
+
+The following function receives the name of the category and one or more words
+(example: ptak and komar).
+
+The first purrr::map compares each word with the list of words inside the category
+and save the position where it is stored in firebase.
+
+The second purrr::map iterates over positions and tells firebase wich position
+to DELETE.
+
+```{r eval = FALSE}
+delete_words <- function(categories, word) {
+  words_delete <- purrr::map(
+    .x = stringr::str_to_lower(word),
+    .f = function(.x) {
+      content(GET(
+        paste0(Sys.getenv("FIREBASE_URL"), "/words/", categories, ".json")
+      )) %>%
+        stringi::stri_trans_tolower(.) %>%
+        unique() %>%
+        stringr::str_starts(.x) %>%
+        which() - 1
+    }
+  )
+
+  purrr::map(
+    .x = words_delete,
+    .f = function(.x) {
+      httr::DELETE(
+        paste0(
+          Sys.getenv("FIREBASE_URL"), "words/", categories, "/", .x, ".json"
+        )
+      )
+    }
+  )
+}
+```
+
+Thanks for reading. Any comments or feedback I would love to hear from you,
+you can have my info from contact.
