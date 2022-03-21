@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>firebase on AINSUASTY</title>
+    <link>http://www.ainsuasty.com/tags/firebase/</link>
+    <description>Recent content in firebase on AINSUASTY</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 12 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/tags/firebase/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to interact with firebase from a shiny app</title>
+      <link>http://www.ainsuasty.com/posts/how-to-connect-firebase-to-shiny-app/</link>
+      <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/posts/how-to-connect-firebase-to-shiny-app/</guid>
+      <description>At the planning phase of creating a shiny app you would find the importance of having storing data and interact with the stored system.
+You might have interaction with data bases using dbplyr, DBI, among others packages. Reading this blog you will find how to use httr in order to access or modify stored data in firebase.
+Interacting with firebase from R    Firstly, you need to have all setup in firebase so R can connect trough API, we recommend to store the API_KEY, firebase_url and password in the .</description>
+    </item>
+    
+  </channel>
+</rss>
