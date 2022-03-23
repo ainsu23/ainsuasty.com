@@ -1,0 +1,109 @@
+---
+title: Data structures with R6Class
+author: Andrés Felipe Insuasty Ch.
+date: '2022-03-21'
+---
+
+# Data Structures
+
+This post is oriented to create classes that recreates data structures and
+explanaition for each. Knowing this may help you improve as a programmer because
+is the basic of each language you would work R, python, c, javascript, others..
+
+Data structures to work with:
+- Arrays
+- LinkedLists
+- Hashtable
+- Stacks
+- Queues
+- Trees
+- Graphs
+
+## Arrays
+R manages dinamics vectors, this means that one index can be added to an existed
+vector. For the purpose of this blog I would create a class R6Class to simmulate
+an Array. Within this array, you would be able to get an index, push a new item
+at the end, pop last item, delete an index.
+
+```{r eval = FALSE}
+myarray <- R6::R6Class(
+  classname = "myarray",
+  public = list(
+    initialize = function() {
+      self$array_length <- 0
+      self$array_data <- c()
+    },
+    array_length = NULL,
+    array_data = NULL,
+    get_value = function(index) {
+      return(self$array_data[index])
+    },
+    push = function(value) {
+      self$array_data[self$array_length + 1] = value
+      self$array_length <- length(self$array_data)
+    },
+    pop = function() {
+      lastItem <- self$array_data[self$array_length]
+      self$array_data <- self$array_data[-self$array_length]
+      self$array_length <- length(self$array_data)
+      return(lastItem)
+    },
+    delete = function(index) {
+      self$array_data <- self$array_data[-index]
+      self$array_length <- length(self$array_data)
+    }
+  )
+)
+myarray = myarray$new()
+myarray$push(2)
+myarray$pop()
+
+```
+
+## LinkedLists
+
+LinkedLists are a set of nodes (that contains information related to where the data
+is stored in pc memory (pointers) and which node is next or previous).
+Until my understanding, R does not have linkedList in its implementation, list
+are manage as vectors or arrays.
+There exists 2 types or linked lists, one is single which it has just one
+direction and double which has two directions.
+
+Nevertheless, let's implement an double linkedList with R6Class:
+
+```{r, eval = FALSE}
+my_Linked_List <- R6::R6Class(
+  classname = "linkedList",
+  public = list(
+    # Initialize with the first value of the linkedList, .next would be NULL
+    initialize = function(value) {
+      self$list_pointer <- list(new.env())
+      self$list_pointer[[1]]$value <- value
+      self$index_head <- 1
+      self$index_tail <- 1
+      self$list_pointer[[1]]$index_next <- NULL
+      self$list_pointer[[1]]$index_prev <- NULL
+    },
+    list_pointer = NULL,
+    index_head = NULL,
+    index_tail = NULL,
+    # next is an used variable from R.
+    get_index = function(index) {
+      if (self$index_tail < index) stop("index not created yet!")
+      return(self$list_pointer[[index]]$value)
+    },
+    insert = function(value) {
+      self$list_pointer <- self$list_pointer %>%
+        append(new.env())
+      self$index_tail <- self$index_tail + 1
+      self$list_pointer[[self$index_tail]]$index_prev <-
+        self$list_pointer[[self$index_tail - 1]]
+      self$list_pointer[[self$index_tail - 1]]$index_next <-
+        self$list_pointer[[self$index_tail]]
+      self$list_pointer[[self$index_tail]]$value <- value
+      self$list_pointer[[self$index_tail]]$index_next <- NULL
+      return(self$list_pointer)
+    }
+  )
+)
+```
