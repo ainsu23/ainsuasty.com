@@ -9,7 +9,7 @@ tags:
   - Excel
   - tips
 ---
-```{css,echo = FALSE}
+<style type="text/css">
 .blocks_style {
   font-weight: bold;
   background-color: whitesmoke;
@@ -17,12 +17,9 @@ tags:
   font-style: italic;
   font-family: Monospace;
 }
-```
+</style>
 
-```{r, echo=FALSE}
-knitr::opts_chunk$set(class.source = "blocks_style")
 
-```
 
 
 ## Procesos de excel realizados en R
@@ -33,8 +30,8 @@ Dividir una base de un libro de excel en varias pestañas teniendo en cuenta una
 
 -   separar archivo por columna
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
 
+```{.r .blocks_style}
 library(dplyr)
 
 archivo <-readxl::read_excel(
@@ -43,9 +40,10 @@ archivo <-readxl::read_excel(
 
 -   Seleccionar columna a separar y convierte a lista
 
-```{r echo=TRUE, message=FALSE, warning=FALSE,class.source="blocks_style"}
-columna <- archivo %>%
-  select(País) %>%
+
+```{.r .blocks_style}
+columna <- archivo %>% 
+  select(País) %>% 
   distinct() %>% as.data.frame()
 
 lista <- as.list(columna$País)
@@ -53,25 +51,13 @@ lista <- as.list(columna$País)
 
 -   Crea lista vacía para almacenar bases
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+```{.r .blocks_style}
 bases = list()
 ```
 
 -   Guarda cada base filtrada con el registro de la lista en una lista de dataframes, adiciona nombres a los elementos de la lista y mantiene las bases que contengan registros
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
-bases <- lista %>% purrr::map(function(x){
-  archivo %>%
-    dplyr::filter(País == x)
-}) %>%
-  purrr::set_names(columna[,1]) %>%
-  purrr::keep(~nrow(.)>0)
-```
 
--   Escribe en un archivo excel la lista de bases
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
-writexl::write_xlsx(x = bases,
-                    path = glue::glue("{here::here()}/datos/separado.xlsx"),
-                    col_names = TRUE)
-```
+
