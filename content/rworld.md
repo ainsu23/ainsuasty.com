@@ -72,6 +72,7 @@
 
 #i2 {
   background: linear-gradient(to top, #686870d1 0%, #9c9ca6d1 120%);
+
 }
 
 span {
