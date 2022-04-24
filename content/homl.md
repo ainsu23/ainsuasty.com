@@ -1,10 +1,30 @@
 
 ---
 ---
+
+# Hands on Machine learning with R
+
+> **During my master in Statistics and Operation Research (graduated: 2015)**,
+> I had some classes with the approach to some supervised and unsupervised
+> machine learning (Multivariante Analysis class and Inferences):
+> - Linear regression,
+> - Principal components analysis (PCA)
+> - Clustering (KNN, hierarchical)
+> - Multidimensional Scaling
+> - Correspondance analysis.
+> - Among others.
+>
+> From the day I started write this blog I have applied for
+> few occassion. Therefore, I decided to read and practice with the book
+> [HOML](https://bradleyboehmke.github.io/HOML/) so I can have a stronger knowledge
+> on machine learning.
+
 The two main groups this book focuses on are: supervised learners which construct
+
 predictive models, and unsupervised learners which build descriptive models
 
-# Supervised learning
+## Supervised learning
+
 A predictive model is used for tasks that involve the prediction of a given
 output (or target) using other variables (or features) in the data set.
 
@@ -21,7 +41,8 @@ we refer to this as a **regression problem**.
 When the objective of our supervised learning is to predict a categorical outcome,
 we refer to this as a **classification problem**.
 
-# Unsupervised learning
+## Unsupervised learning
+
 Unsupervised learning, in contrast to supervised learning, includes a set of
 statistical tools to better understand and describe your data, but performs the
 analysis without a target variable. **In essence, unsupervised learning is concerned
@@ -29,7 +50,7 @@ with identifying groups in a data set. The groups may be defined by the rows
 (i.e., clustering) or the columns (i.e., dimension reduction); however, the
 motive in each case is quite different.**
 
-# Data splitting
+## Data splitting
 A major goal of the machine learning process is to find an algorithm
 _f_(**X**) that most accurately predicts future values (^Y) based on a set of features
 (**X**). In other words, we want an algorithm that not only fits well to our past
@@ -85,7 +106,8 @@ train_4 <- split_2[[1]]
 test_4  <- split_2[[2]]
 ```
 
-## Stratified sampling
+### Stratified sampling
+
 **If we want to explicitly control the sampling so that our training and test sets
 have similar _Y_  distributions**, we can use stratified sampling. This is _more
 common with classification problems_ where the response variable may be severely
