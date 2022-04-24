@@ -24,6 +24,7 @@ The two main groups this book focuses on are: supervised learners which construc
 predictive models, and unsupervised learners which build descriptive models
 
 ## Supervised learning
+
 A predictive model is used for tasks that involve the prediction of a given
 output (or target) using other variables (or features) in the data set.
 
@@ -41,6 +42,7 @@ When the objective of our supervised learning is to predict a categorical outcom
 we refer to this as a **classification problem**.
 
 ## Unsupervised learning
+
 Unsupervised learning, in contrast to supervised learning, includes a set of
 statistical tools to better understand and describe your data, but performs the
 analysis without a target variable. **In essence, unsupervised learning is concerned
@@ -105,6 +107,7 @@ test_4  <- split_2[[2]]
 ```
 
 ### Stratified sampling
+
 **If we want to explicitly control the sampling so that our training and test sets
 have similar _Y_  distributions**, we can use stratified sampling. This is _more
 common with classification problems_ where the response variable may be severely
