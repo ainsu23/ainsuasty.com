@@ -50,6 +50,13 @@
   box-shadow: 0px 20px 100px #555;
 }
 
+#c3 {
+  left: -200%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
 .contenedor:hover {
   cursor: pointer;
   transform: rotate(0deg) scale(1) translateY(10px);
@@ -171,7 +178,7 @@ h1 {
 
 <html>
 <body>
-<h1> 3 World places to visit this year</h1>
+<h1> 4 World places to visit this year</h1>
 <div class="wrapper_modificado">
     <div class="contenedor" id="c0">
         <div class="image" id="i1">
@@ -218,6 +225,22 @@ h1 {
             <div class="info">
                 <h3> Shiny portfolio </h3>
                 <p> Apps developed in shiny: Mastering shiny and learning polish, soon more... </p>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor" id="c3">
+        <div class="image" id="i1">
+            <a href = "https://ainsuasty.com/homl/">
+              <svg id="color-fill" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="300" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <polygon class="hex" points="300,100 300,240 0,240 0,100 155,0 155,0"></polygon>
+              <text x="150" y="170" font-size="60" text-anchor="middle" fill="white">HOML</text>
+              </svg>
+            </a>
+        </div>
+        <div class="story" id="s2">
+            <div class="info">
+                <h3> Machine learning </h3>
+                <p>Machine learning projects developed base on book HOML with R</p>
             </div>
         </div>
     </div>
