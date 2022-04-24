@@ -18,13 +18,16 @@
 > few occassion. Therefore, I decided to read and practice with the book
 > [HOML](https://bradleyboehmke.github.io/HOML/) so I can have a stronger knowledge
 > on machine learning.
+>
+> \***Below, you can find some quotes from the book which is very important to me, and
+> some notes that I included.**
+
 
 The two main groups this book focuses on are: supervised learners which construct
 
 predictive models, and unsupervised learners which build descriptive models
 
 ## Supervised learning
-
 A predictive model is used for tasks that involve the prediction of a given
 output (or target) using other variables (or features) in the data set.
 
@@ -42,7 +45,6 @@ When the objective of our supervised learning is to predict a categorical outcom
 we refer to this as a **classification problem**.
 
 ## Unsupervised learning
-
 Unsupervised learning, in contrast to supervised learning, includes a set of
 statistical tools to better understand and describe your data, but performs the
 analysis without a target variable. **In essence, unsupervised learning is concerned
@@ -107,7 +109,6 @@ test_4  <- split_2[[2]]
 ```
 
 ### Stratified sampling
-
 **If we want to explicitly control the sampling so that our training and test sets
 have similar _Y_  distributions**, we can use stratified sampling. This is _more
 common with classification problems_ where the response variable may be severely
