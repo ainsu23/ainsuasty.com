@@ -22,6 +22,7 @@
 > \***Below, you can find some quotes from the book which is very important to me, and
 > some notes that I included.**
 
+
 The two main groups this book focuses on are: supervised learners which construct
 
 predictive models, and unsupervised learners which build descriptive models
