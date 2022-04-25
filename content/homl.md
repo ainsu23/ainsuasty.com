@@ -186,3 +186,4 @@ A bootstrap sample is a random sample of the data taken with replacement.
 A bootstrap sample is the same size as the original data set from which it was
 constructed. bootstrap sampling will contain approximately the same distribution
 of values (represented by colors) as the original data set.
+
