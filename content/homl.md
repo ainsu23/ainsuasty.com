@@ -22,7 +22,6 @@
 > \***Below, you can find some quotes from the book which is very important to me, and
 > some notes that I included.**
 
-
 The two main groups this book focuses on are: supervised learners which construct
 
 predictive models, and unsupervised learners which build descriptive models
@@ -121,3 +120,70 @@ continuous response variable, stratified sampling will segment
 Y into quantiles and randomly sample from each. Consequently, this will help
 ensure a balanced representation of the response distribution in both the
 training and test sets
+
+## Creating models in R
+### Many formula interfaces
+
+```r
+# Sale price as function of neighborhood and year sold
+model_fn(Sale_Price ~ Neighborhood + Year_Sold,
+         data = ames)
+
+# Variables + interactions
+model_fn(Sale_Price ~ Neighborhood + Year_Sold +
+           Neighborhood:Year_Sold, data = ames)
+
+# Shorthand for all predictors
+model_fn(Sale_Price ~ ., data = ames)
+
+# Inline functions / transformations
+model_fn(log10(Sale_Price) ~ ns(Longitude, df = 3) +
+           ns(Latitude, df = 3), data = ames)
+```
+
+```r
+lm_lm    <- lm(Sale_Price ~ ., data = ames)
+lm_glm   <- glm(Sale_Price ~ ., data = ames,
+                family = gaussian)
+lm_caret <- train(Sale_Price ~ ., data = ames,
+                  method = "lm")
+```
+
+Here, lm() and glm() are two different algorithm engines that can be used to
+fit the linear model and caret::train() is a meta engine (aggregator) that
+allows you to apply almost any direct engine with method = "<method-name>".
+
+### Resampling methods
+**Resampling methods** provide an alternative approach by allowing us to repeatedly
+fit a model of interest to parts of the training data and test its performance
+on other parts. The two most commonly used resampling methods include _k-fold
+cross validation_ and _bootstrapping._
+
+#### K-Fold cross validation
+k-fold cross-validation (aka k-fold CV) is a resampling method that randomly
+divides the training data into k groups (aka folds) of approximately equal size.
+The model is fit on k−1 folds and then the remaining fold is used to compute model
+performance. This procedure is repeated k times; each time, a different fold is
+treated as the validation set. This process results in k estimates of the generalization error
+(say ϵ1, ϵ2, …, ϵk). Thus, the k-fold CV estimate is computed by averaging the
+k test errors, providing us with an approximation of the error we might expect
+on unseen data.
+
+```r
+# Example using h2o
+h2o.cv <- h2o.glm(
+  x = x,
+  y = y,
+  training_frame = ames.h2o,
+  nfolds = 10  # perform 10-fold CV
+)
+
+vfold_cv(ames, v = 5)
+```
+
+#### Bootstrapping
+A bootstrap sample is a random sample of the data taken with replacement.
+A bootstrap sample is the same size as the original data set from which it was
+constructed. bootstrap sampling will contain approximately the same distribution
+of values (represented by colors) as the original data set.
+
