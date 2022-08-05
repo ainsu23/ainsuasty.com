@@ -26,7 +26,8 @@ params:
   hideCopyright: no
   hideCredits: no
   hideFooter: no
-  info: R | Shiny Developer
+  info: Data Scientist 
+
   keywords: blog,developer,personal
   maxSeeAlsoItems: 5
   rtl: no
