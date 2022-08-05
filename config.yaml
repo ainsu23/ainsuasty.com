@@ -5,27 +5,29 @@ languageCode: en
 defaultContentLanguage: en
 paginate: 20
 pygmentsStyle: manni
+highlightjsTheme: Github
 pygmentsUseClassic: no
 pygmentsCodeFences: yes
 pygmentsCodeFencesGuessSyntax: yes
 enableEmoji: yes
 googleAnalytics: "UA-176122758-1"
 params:
-  author: Andres Felipe Insuasty Ch. 
+  author: Andrés Felipe Insuasty Ch.
   avatarurl : "images/Foto_Marca_Personal.jpeg"
   colorScheme: auto
   customCSS: []
   customJS: []
   customSCSS: []
   dateFormat: January 2, 2006
-  description: Andres Insuasty's personal website
+  description: Andrés Insuasty's personal website
   enableTwemoji: yes
-  footerContent: Personal Website made with ❤️ from Rstudio cloud + hugo + Github + imagination and hardwork.
+  footerContent: Personal Website made with ❤️ R + hugo + Github + Netlify.
   hideColorSchemeToggle: no
   hideCopyright: no
   hideCredits: no
   hideFooter: no
   info: Data Scientist 
+
   keywords: blog,developer,personal
   maxSeeAlsoItems: 5
   rtl: no
@@ -56,17 +58,34 @@ languages:
         - name: About
           url: about/
           weight: 1
+        - name: 7 goals 2022
+          url: 7goals2022/
+          weight: 2
+        - name: My R world
+          identifier: rworld
+          url: rworld/
+          weight: 3
         - name: Blog
           url: posts/
-          weight: 2
+          parent: rworld
+          weight: 30
         - name: Projects
           url: projects/
-          weight: 3
+          parent: rworld
+          weight: 31
+        - name: Shiny apps
+          url: Shiny/
+          parent: rworld
+          weight: 32
+        - name: Blog
+          url: homl/
+          parent: rworld
+          weight: 33
         - name: Contact me
           url: contact/
           weight: 4
-        - name: cv
-          url: cv/
+        - name: resume
+          url: resume
           weight: 5
   es:
     languageName: ':es:'
@@ -75,3 +94,8 @@ languages:
         - name: Blog
           url: post/
           weight: 1
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

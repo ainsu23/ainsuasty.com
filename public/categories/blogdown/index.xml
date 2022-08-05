@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogdown on AINSUASTY</title>
+    <link>http://www.ainsuasty.com/categories/blogdown/</link>
+    <description>Recent content in Blogdown on AINSUASTY</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/categories/blogdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ainsuasty.com</title>
+      <link>http://www.ainsuasty.com/projects/ainsuasty-com/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/projects/ainsuasty-com/</guid>
+      <description>My own web page ainsuasty.com 👨‍💼 I started building my webpage on 2020. All source code is on github ainsuasty.com.
+The template hugo-coder was chosen from Hugo. A forked version is on my github where I changed the family-font from fonts.google.com. This forked version is a submodule of the ainsuasty.com repository.
+A good guideline to create smart websites is the book written by Yihui Xie blogdown.
+ainsuasty.com contains:</description>
+    </item>
+    
+  </channel>
+</rss>

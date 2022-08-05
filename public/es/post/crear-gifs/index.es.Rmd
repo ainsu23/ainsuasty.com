@@ -15,6 +15,21 @@ params:
   MapaColombia: data/MapaColombia.csv
 ---
 
+```{css,echo = FALSE}
+.blocks_style {
+  font-weight: bold;
+  background-color: whitesmoke;
+  color: black;
+  font-style: italic;
+  font-family: Monospace;
+}
+```
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(class.source = "blocks_style")
+
+```
+
 ```{r colortext,include=FALSE}
 
 colorize <- function(x, color) {
@@ -28,8 +43,7 @@ colorize <- function(x, color) {
 
 ```
 
-
-# Aprende *R* con datos de `r colorize("Co","yellow")``r colorize("lom","blue")``r colorize("bia","red")`!!
+# Aprende *R* con datos de `r colorize("Co","yellow")``r colorize("lom","blue")``r colorize("bia","red")` !!
 
 ![](images/plot-1.gif){width="548"}
 
@@ -49,14 +63,14 @@ Lo primero que debes saber es que hay que instalar los paquetes que vas a necesi
 
 Las librerías y funciones a usar son:
 
-```{r librerias, include=TRUE,collapse=TRUE,message=FALSE,class.source="badCode"}
+```{r librerias, include=TRUE,collapse=TRUE,message=FALSE}
 library(skimr) # skimr::skim() nos brinda el resumen estadística de una tabla
 library(ggplot2) #ggplot2::ggplot(),geom_text(),geom_polygon(),annotation_custom(), datos: map_data()
 library(dplyr) #dplyr::select(), group_by(),summarise(), mutate()
 library(stringr) # stringr::str_replace_all(),
-library(ggimage) # ggimage::geom_image()
+# library(ggimage) # ggimage::geom_image()
 library(glue) # glue:glue()
-library(gganimate) # gganimate::anim_save(),transition(), exit_shrink(), exit_shrink
+library(gganimate) #
 library(gifski)
 
 ```
@@ -65,7 +79,7 @@ library(gifski)
 
 Las anteriores librerías son exclusivas para este blog, sin embargo, existen paquetes para leer archivos pdf, word, xls o también para extraer y enviar información a bases de datos. La función **read.csv** nos permite leer datos *csv* tal como lo vemos a continuación
 
-```{r readingdata,warning=FALSE,class.source="badCode"}
+```{r readingdata,warning=FALSE, eval = FALSE}
 Evol_Agrope_Colombia<-read.csv(params$Evol_Agrope_Colombia)
 
 ColombiaMap <- map_data("world", region = "Colombia")
@@ -90,16 +104,22 @@ El código de abajo asigna a la tabla **MapaColombia** con el signo "\<- o =" la
 -   los departamentos que tengan espacios entre sus palabras, juntarlas con un "\_", ejemplo "Valle del Cauca" por "Valle_del_Cauca" (mutate)
 -   Por último, reemplazar nombres (mutate)
 
-```{r mapaColombia,warning=FALSE, message=FALSE, paged.print=FALSE,class.source="badCode"}
+```{r mapaColombia,warning=FALSE, message=FALSE, paged.print=FALSE, eval = FALSE}
  MapaColombia<-MapaColombia %>%
   select(longitud,latitud,codigo_departamento,nombre_departamento) %>%
   group_by(nombre_departamento,codigo_departamento) %>%
-  summarise(longitud=mean(longitud,na.rm = TRUE),latitud=mean(latitud,na.rm = TRUE)) %>%
+  summarise(longitud=mean(longitud,na.rm = TRUE),
+            latitud=mean(latitud,na.rm = TRUE)) %>%
   mutate(nombre_departamento=str_replace_all(nombre_departamento," ","_")) %>%
-  mutate(nombre_departamento=ifelse(nombre_departamento=="ARCHIPIELAGO_DE_SAN_ANDRES,_PROVIDENCIA_Y_SANTA_CATALINA","SAN_ANDRES_Y_PROVIDENCIA",nombre_departamento))
+  mutate(nombre_departamento=
+           ifelse(nombre_departamento=="ARCHIPIELAGO_DE_SAN_ANDRES,
+                  _PROVIDENCIA_Y_SANTA_CATALINA","SAN_ANDRES_Y_PROVIDENCIA",
+                  nombre_departamento))
 
 
-MapaColombia %>% head(5) %>% as.data.frame()
+MapaColombia %>% 
+  head(5) %>% 
+  as.data.frame()
 
 ```
 
@@ -110,28 +130,35 @@ La tabla ***Evol_Agrope_Colombia*** necesita las siguientes modificaciones para 
 -   Adicionar coordenadas en el mapa. Se hace un left_join() (tip excel: *buscarv*) con la tabla Mapa Colombia.
 -   Columna image hace referencia al nombre del png a usar en la gráfica.
 
-```{r,message=FALSE,class.source="badCode"}
+```{r,message=FALSE, eval = FALSE}
 
-Evol_Agrope_Colombia<-Evol_Agrope_Colombia %>% group_by(DEPARTAMENTO,CULTIVO,AÑO) %>%
-  summarise(Area_Cosechada=sum(Área.Cosechada..ha.)) %>% ungroup() %>%
+Evol_Agrope_Colombia <- Evol_Agrope_Colombia %>% 
+  group_by(DEPARTAMENTO,CULTIVO,AÑO) %>%
+  summarise(Area_Cosechada=sum(Área.Cosechada..ha.)) %>% 
+  ungroup() %>%
   group_by(DEPARTAMENTO,AÑO) %>%
-  filter(Area_Cosechada==max(Area_Cosechada)) %>% ungroup() %>%
+  filter(Area_Cosechada==max(Area_Cosechada)) %>% 
+  ungroup() %>%
   mutate_if(is.factor,~str_replace_all(.," ","_")) %>%
   left_join(MapaColombia %>% rename(DEPARTAMENTO=nombre_departamento),
                        by = "DEPARTAMENTO") %>% filter(!is.na(Area_Cosechada)) %>%
-  rename(long=longitud,lat=latitud) %>% select(DEPARTAMENTO,AÑO,Area_Cosechada,CULTIVO,long,lat) %>%
+  rename(long=longitud,lat=latitud) %>%
+  select(DEPARTAMENTO,AÑO,Area_Cosechada,CULTIVO,long,lat) %>%
   ungroup() %>%
-  as.data.frame() %>% mutate(image=glue::glue("{here::here('content','post')}/{rmarkdown::metadata$date}-{stringr::str_to_lower(rmarkdown::metadata$slug)}/images/{CULTIVO}.png"))
-
+  as.data.frame() %>% 
+  mutate(image = 
+           glue::glue(
+             "{here::here('content','post')}/{rmarkdown::metadata$date}-{stringr::str_to_lower(rmarkdown::metadata$slug)}/images/{CULTIVO}.png"))
 
 ```
 
 Para situar los nombres de los departamentos, se creó la tabla `_region.lab.data_`, la cual contiene las coordenadas promedio de los departamentos de Colombia.
 
-```{r,message=FALSE,class.source="badCode"}
+```{r,message=FALSE, eval = FALSE}
 region.lab.data <- MapaColombia %>%
   group_by(nombre_departamento) %>%
-  summarise(long = mean(longitud), lat = mean(latitud)) %>% ungroup() %>%
+  summarise(long = mean(longitud), lat = mean(latitud)) %>% 
+  ungroup() %>%
   filter(nombre_departamento!="BOGOTA,_D._C.")
 
 
@@ -148,20 +175,25 @@ El siguiente código es una combinación de paquetes muy poderosos para la const
 5.  Usando el paquete gganimate y la función transition_time, se crea un video respecto al tiempo. Las siguientes 3 líneas de código hacen referencia a efectos del video
 6.  Con geom_text, se agrega el nombre del departamento.
 
-```{r plot,warning=FALSE, message=FALSE,class.source="badCode"}
- p<-ggplot(ColombiaMap,aes(x = long, y = lat)) +
-   geom_polygon(aes(group = group, fill = subregion),color="orange",fill="white") +
-   geom_image(data = Evol_Agrope_Colombia,aes(x=long,y=lat,image=image),size=0.07) +
-   geom_text(data = Evol_Agrope_Colombia,aes(x=long,y=lat,label=CULTIVO),
-             size=3,vjust=-0.5,color="red",fontface="italic")+
+```{r plot,warning=FALSE, message=FALSE, eval = FALSE}
+ p <- ggplot(ColombiaMap,aes(x = long, y = lat)) +
+   geom_polygon(aes(group = group, fill = subregion),
+                color = "orange",
+                fill = "white") +
+   geom_image(data = Evol_Agrope_Colombia,
+              aes(x = long,y = lat,image = image),
+              size = 0.07) +
+   geom_text(data = Evol_Agrope_Colombia,
+             aes(x = long, y = lat, label = CULTIVO),
+             size = 3, vjust = -0.5, color = "red", fontface = "italic") +
    transition_time(AÑO)+
-   labs(title="Año: {frame_time}")+
+   labs(title = "Año: {frame_time}")+
    enter_fade() +
    exit_shrink() +
    geom_text(aes(label = nombre_departamento),
              data = region.lab.data,  size = 4, hjust = 0.5,
-             color="black",family = "Courier",fontface="bold")+
-   scale_colour_manual(values=c("#FFFFFF", "#FFFFFF"))+
+             color = "black", family = "Courier", fontface = "bold" ) +
+   scale_colour_manual( values = c("#FFFFFF", "#FFFFFF")) +
    theme(legend.position = "none")
 
 

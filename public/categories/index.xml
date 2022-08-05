@@ -6,13 +6,49 @@
     <description>Recent content in Categories on AINSUASTY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>OR</title>
-      <link>http://www.ainsuasty.com/categories/or/</link>
-      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <title>Blogdown</title>
+      <link>http://www.ainsuasty.com/categories/blogdown/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://www.ainsuasty.com/categories/or/</guid>
+      <guid>http://www.ainsuasty.com/categories/blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>http://www.ainsuasty.com/categories/github/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>http://www.ainsuasty.com/categories/r/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rmarkdown</title>
+      <link>http://www.ainsuasty.com/categories/rmarkdown/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/rmarkdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shiny</title>
+      <link>http://www.ainsuasty.com/categories/shiny/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/categories/shiny/</guid>
       <description></description>
     </item>
     
@@ -22,15 +58,6 @@
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://www.ainsuasty.com/categories/blastula/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rmarkdown</title>
-      <link>http://www.ainsuasty.com/categories/rmarkdown/</link>
-      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.ainsuasty.com/categories/rmarkdown/</guid>
       <description></description>
     </item>
     

@@ -1,8 +1,9 @@
-# ainsuasty.com
-Espacio destinado para almacenar el código, tips, trucos de mi página web ainsuasty.com
+# [ainsuasty.com](https://ainsuasty.com/).
+Este repositorio contiene el código construido desde blogdown en R para construir el blog personal [ainsuasty.com](https://ainsuasty.com/).
 
+## Submodules
+- resume/ : Redirige a repositorio *resume* que usa mi paquete propio de _datadrivencv_ 
+- themes/@hugo-coder: Redirige a mi propio repositorio de hugo-coder, dónde se ha modificado la visualización del hugo coder original.
 
-## Información almacenada en PostgrSQL
-Los datos usados en toda la página están siendo almacenados en Postgres. La conexión se realiza desde R/global.R y las credenciales se almacenan en un .Renviron, el cual no es enviado a GitHub (mediante .gitignore) por seguridad.
-
-hosted on Netlify :)
+## Hosted on 
+Netlify :)

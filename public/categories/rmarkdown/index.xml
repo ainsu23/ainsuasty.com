@@ -6,18 +6,29 @@
     <description>Recent content in Rmarkdown on AINSUASTY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 25 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/categories/rmarkdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/categories/rmarkdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ainsuasty.com</title>
+      <link>http://www.ainsuasty.com/projects/ainsuasty-com/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/projects/ainsuasty-com/</guid>
+      <description>My own web page ainsuasty.com 👨‍💼 I started building my webpage on 2020. All source code is on github ainsuasty.com.
+The template hugo-coder was chosen from Hugo. A forked version is on my github where I changed the family-font from fonts.google.com. This forked version is a submodule of the ainsuasty.com repository.
+A good guideline to create smart websites is the book written by Yihui Xie blogdown.
+ainsuasty.com contains:</description>
+    </item>
+    
     <item>
       <title>Sending automatic emails with R 📧</title>
       <link>http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/</link>
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/</guid>
-      <description>Automatic reports through emails 📧Impress your boss with automatic reports in their emails.
+      <description>.blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Automatic reports through emails 📧 Impress your boss with automatic reports in their emails.
 Packages required:
- blastula: Package to send emails keyring: Set credentials of email 🔐 Rmardown: Create automatic reports  Read Rmarkdown filetempreport &amp;lt;- file.path(&amp;hellip;) # set directory of your Rmarkdown file
-Render mail with tempfileemail&amp;lt;-blastula::render_email(input = tempreport)
-send email*credentials are explained at the end of the post!</description>
+blastula: Package to send emails keyring: Set credentials of email 🔐 Rmardown: Create automatic reports  Read Rmarkdown file set directory of your Rmarkdown file
+tempreport &amp;lt;- file.path(...)   Render mail with tempfile email &amp;lt;- blastula::render_email(input = tempreport)  send email *credentials are explained at the end of the post!</description>
     </item>
     
   </channel>

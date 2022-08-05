@@ -6,7 +6,30 @@
     <description>Recent content in Projects on AINSUASTY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ainsuasty.com</title>
+      <link>http://www.ainsuasty.com/projects/ainsuasty-com/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/projects/ainsuasty-com/</guid>
+      <description>My own web page ainsuasty.com 👨‍💼 I started building my webpage on 2020. All source code is on github ainsuasty.com.
+The template hugo-coder was chosen from Hugo. A forked version is on my github where I changed the family-font from fonts.google.com. This forked version is a submodule of the ainsuasty.com repository.
+A good guideline to create smart websites is the book written by Yihui Xie blogdown.
+ainsuasty.com contains:</description>
+    </item>
+    
+    <item>
+      <title>Participacion AIS (Analitica Integrada Salud)</title>
+      <link>http://www.ainsuasty.com/projects/2021-08-26-participacion-ais-analitica-integrada-salud/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/projects/2021-08-26-participacion-ais-analitica-integrada-salud/</guid>
+      <description>  Mi participación en el proyecto AIS se puede observar en el siguiente link de github proyais/aisalud
+Colaboración en:
+ Mantenimiento y adición de modulos de Shiny Diseño e implmentación de estructuras JSON para actualización de información Documentación de funciones con roxigen Pruebas funcionales de la herramienta  </description>
+    </item>
+    
     <item>
       <title>Tidytuesday</title>
       <link>http://www.ainsuasty.com/projects/tidytuesday/</link>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Andrés Felipe Insuasty Ch.">
+    <meta name="description" content=".blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Aprende R con datos de Colombia !!    {width=&ldquo;548&rdquo;}
+En esta ocasión revisamos la evolución agropecuaria de Colombia por departamentos a partir del año 2006 hasta el año 2018. Los datos fueron extraídos de los Datos Abiertos de Colombia.
+ R es un software estadístico OpenSource, esto quiere decir que el mundo entero está aportando al conocimiento y desarrollo de este mismo.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Crear GIFs con R: Evaluacion agricultura Colombia"/>
+<meta name="twitter:description" content=".blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Aprende R con datos de Colombia !!    {width=&ldquo;548&rdquo;}
+En esta ocasión revisamos la evolución agropecuaria de Colombia por departamentos a partir del año 2006 hasta el año 2018. Los datos fueron extraídos de los Datos Abiertos de Colombia.
+ R es un software estadístico OpenSource, esto quiere decir que el mundo entero está aportando al conocimiento y desarrollo de este mismo."/>
+
+    <meta property="og:title" content="Crear GIFs con R: Evaluacion agricultura Colombia" />
+<meta property="og:description" content=".blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Aprende R con datos de Colombia !!    {width=&ldquo;548&rdquo;}
+En esta ocasión revisamos la evolución agropecuaria de Colombia por departamentos a partir del año 2006 hasta el año 2018. Los datos fueron extraídos de los Datos Abiertos de Colombia.
+ R es un software estadístico OpenSource, esto quiere decir que el mundo entero está aportando al conocimiento y desarrollo de este mismo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.ainsuasty.com/post/crear-gifs/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-05-09T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-05-09T00:00:00&#43;00:00" />
+
+
+
+    <title>
+  Crear GIFs con R: Evaluacion agricultura Colombia · AINSUASTY
+</title>
+
+    
+      <link rel="canonical" href="http://www.ainsuasty.com/post/crear-gifs/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.6a6bac2e36ae24265ed814800362715a564e2dba2940c6c6556e5842bddd1847.css" integrity="sha256-amusLjauJCZe2BSAA2JxWlZOLbopQMbGVW5YQr3dGEc=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.51c0e6757ae35097fbc2c4659dabf099de25f5230d514d8072e3d6abe9356626.css" integrity="sha256-UcDmdXrjUJf7wsRlnavwmd4l9SMNUU2AcuPWq&#43;k1ZiY=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.82.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      AINSUASTY
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/7goals2022/">7 goals 2022</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/rworld/">My R world</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/resume">resume</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="http://www.ainsuasty.com/es/">🇪🇸</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://www.ainsuasty.com/post/crear-gifs/">
+          Crear GIFs con R: Evaluacion agricultura Colombia
+        </a>
+      </h1>
+    </header>
+
+    <style type="text/css">
+.blocks_style {
+  font-weight: bold;
+  background-color: whitesmoke;
+  color: black;
+  font-style: italic;
+  font-family: Monospace;
+}
+</style>
+<h1 id="aprende-r-con-datos-de-span-stylecolor-yellowcospanspan-stylecolor-bluelomspanspan-stylecolor-redbiaspan-">
+  Aprende <em>R</em> con datos de <span style='color: yellow;'>Co</span><span style='color: blue;'>lom</span><span style='color: red;'>bia</span> !!
+  <a class="heading-link" href="#aprende-r-con-datos-de-span-stylecolor-yellowcospanspan-stylecolor-bluelomspanspan-stylecolor-redbiaspan-">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p><img src="images/plot-1.gif" alt="">{width=&ldquo;548&rdquo;}</p>
+<p>En esta ocasión revisamos la evolución agropecuaria de Colombia por departamentos a partir del año 2006 hasta el año 2018. Los datos fueron extraídos de los <a href="https://www.datos.gov.co/"><em>Datos Abiertos</em></a> de Colombia.</p>
+<hr>
+<p>R es un software estadístico OpenSource, esto quiere decir que el mundo entero está aportando al conocimiento y desarrollo de este mismo. <strong>Por ejemplo: esta página Web y blog fueron creados sólo con código R.</strong></p>
+<p>Lo primero que debes saber es que hay que instalar los paquetes que vas a necesitar (<code>install.packages(&quot;nombre_paquete&quot;)</code>), lo segundo es que estos paquetes contienen funciones.</p>
+<p><em><strong>Por Ejemplo:</strong></em> <code>dplyr::arrange()</code> El paquete es <em>dplyr</em> (paquete para manejo de datos en tablas) y la función es <em>arrange</em> (función para ordenar columnas). El paquete puede contener una o más funciones, para el caso de dplyr tiene funciones que sirven para: seleccionar, borrar, filtrar, agregar, entre otras.</p>
+<hr>
+<h2 id="cargue-de-librerías">
+  Cargue de Librerías
+  <a class="heading-link" href="#cargue-de-librer%c3%adas">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Las librerías y funciones a usar son:</p>
+
+  </article>
+</section>
+
+  
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Personal Website made with ❤️ R + hugo + Github + Netlify.</p>
+      
+      
+        ©
+        
+          2021 -
+        
+        2022
+         Andrés Felipe Insuasty Ch. 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-176122758-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

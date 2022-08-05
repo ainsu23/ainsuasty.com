@@ -6,27 +6,17 @@
     <description>Recent content in Posts on AINSUASTY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Optimization - Assign solution with R ☑️👨 ✖️👨</title>
-      <link>http://www.ainsuasty.com/posts/assign-solution-with-ompr-r/</link>
-      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.ainsuasty.com/posts/assign-solution-with-ompr-r/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sun, 25 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sending automatic emails with R 📧</title>
       <link>http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/</link>
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/</guid>
-      <description>Automatic reports through emails 📧Impress your boss with automatic reports in their emails.
+      <description>.blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Automatic reports through emails 📧 Impress your boss with automatic reports in their emails.
 Packages required:
- blastula: Package to send emails keyring: Set credentials of email 🔐 Rmardown: Create automatic reports  Read Rmarkdown filetempreport &amp;lt;- file.path(&amp;hellip;) # set directory of your Rmarkdown file
-Render mail with tempfileemail&amp;lt;-blastula::render_email(input = tempreport)
-send email*credentials are explained at the end of the post!</description>
+blastula: Package to send emails keyring: Set credentials of email 🔐 Rmardown: Create automatic reports  Read Rmarkdown file set directory of your Rmarkdown file
+tempreport &amp;lt;- file.path(...)   Render mail with tempfile email &amp;lt;- blastula::render_email(input = tempreport)  send email *credentials are explained at the end of the post!</description>
     </item>
     
     <item>
@@ -35,8 +25,8 @@ send email*credentials are explained at the end of the post!</description>
       <pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://www.ainsuasty.com/posts/extract-information-with-encoding/</guid>
-      <description>Are you a non English R user?In my case, Spanish language has the following letters: á, é, í, ó, ú, ü and ñ. This letters are saved different depending on the encoding (computation language) of the table you are extracting the data. And reading them might cause some headaches.
-Tips 💡To avoid having strange characters when reading the previews letters, make sure you are extracting the data with the same encoding of the table from your database (check properties of the table) or excel file.</description>
+      <description>Are you a non English R user? In my case, Spanish language has the following letters: á, é, í, ó, ú, ü and ñ. This letters are saved different depending on the encoding (computation language) of the table you are extracting the data. And reading them might cause some headaches.
+Tips 💡 To avoid having strange characters when reading the previews letters, make sure you are extracting the data with the same encoding of the table from your database (check properties of the table) or excel file.</description>
     </item>
     
   </channel>

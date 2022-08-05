@@ -6,18 +6,16 @@
     <description>Recent content in Posts on AINSUASTY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tips de procesos de Excel en R</title>
-      <link>http://www.ainsuasty.com/post/tips-de-procesos-de-excel-en-r/</link>
-      <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
+      <title>Crear GIFs con R: Evaluacion agricultura Colombia</title>
+      <link>http://www.ainsuasty.com/post/crear-gifs/</link>
+      <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://www.ainsuasty.com/post/tips-de-procesos-de-excel-en-r/</guid>
-      <description>Procesos de excel realizados en R1. Guardar en varias pestañas de un libroDividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
-  separar archivo por columna
-  Seleccionar columna a separar y convierte a lista
-  Crea lista vacía para almacenar bases
-  Guarda cada base filtrada con el registro de la lista en una lista de dataframes, adiciona nombres a los elementos de la lista y mantiene las bases que contengan registros</description>
+      <guid>http://www.ainsuasty.com/post/crear-gifs/</guid>
+      <description>.blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Aprende R con datos de Colombia !!    {width=&amp;ldquo;548&amp;rdquo;}
+En esta ocasión revisamos la evolución agropecuaria de Colombia por departamentos a partir del año 2006 hasta el año 2018. Los datos fueron extraídos de los Datos Abiertos de Colombia.
+ R es un software estadístico OpenSource, esto quiere decir que el mundo entero está aportando al conocimiento y desarrollo de este mismo.</description>
     </item>
     
   </channel>

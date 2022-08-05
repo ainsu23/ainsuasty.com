@@ -6,14 +6,28 @@
     <description>Recent content on AINSUASTY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.ainsuasty.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Optimization - Assign solution with R ☑️👨 ✖️👨</title>
-      <link>http://www.ainsuasty.com/posts/assign-solution-with-ompr-r/</link>
-      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <title>ainsuasty.com</title>
+      <link>http://www.ainsuasty.com/projects/ainsuasty-com/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://www.ainsuasty.com/posts/assign-solution-with-ompr-r/</guid>
-      <description></description>
+      <guid>http://www.ainsuasty.com/projects/ainsuasty-com/</guid>
+      <description>My own web page ainsuasty.com 👨‍💼 I started building my webpage on 2020. All source code is on github ainsuasty.com.
+The template hugo-coder was chosen from Hugo. A forked version is on my github where I changed the family-font from fonts.google.com. This forked version is a submodule of the ainsuasty.com repository.
+A good guideline to create smart websites is the book written by Yihui Xie blogdown.
+ainsuasty.com contains:</description>
+    </item>
+    
+    <item>
+      <title>Participacion AIS (Analitica Integrada Salud)</title>
+      <link>http://www.ainsuasty.com/projects/2021-08-26-participacion-ais-analitica-integrada-salud/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/projects/2021-08-26-participacion-ais-analitica-integrada-salud/</guid>
+      <description>  Mi participación en el proyecto AIS se puede observar en el siguiente link de github proyais/aisalud
+Colaboración en:
+ Mantenimiento y adición de modulos de Shiny Diseño e implmentación de estructuras JSON para actualización de información Documentación de funciones con roxigen Pruebas funcionales de la herramienta  </description>
     </item>
     
     <item>
@@ -22,11 +36,10 @@
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://www.ainsuasty.com/posts/sending-automatic-emails-with-r/</guid>
-      <description>Automatic reports through emails 📧Impress your boss with automatic reports in their emails.
+      <description>.blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Automatic reports through emails 📧 Impress your boss with automatic reports in their emails.
 Packages required:
- blastula: Package to send emails keyring: Set credentials of email 🔐 Rmardown: Create automatic reports  Read Rmarkdown filetempreport &amp;lt;- file.path(&amp;hellip;) # set directory of your Rmarkdown file
-Render mail with tempfileemail&amp;lt;-blastula::render_email(input = tempreport)
-send email*credentials are explained at the end of the post!</description>
+blastula: Package to send emails keyring: Set credentials of email 🔐 Rmardown: Create automatic reports  Read Rmarkdown file set directory of your Rmarkdown file
+tempreport &amp;lt;- file.path(...)   Render mail with tempfile email &amp;lt;- blastula::render_email(input = tempreport)  send email *credentials are explained at the end of the post!</description>
     </item>
     
     <item>
@@ -44,8 +57,19 @@ send email*credentials are explained at the end of the post!</description>
       <pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://www.ainsuasty.com/posts/extract-information-with-encoding/</guid>
-      <description>Are you a non English R user?In my case, Spanish language has the following letters: á, é, í, ó, ú, ü and ñ. This letters are saved different depending on the encoding (computation language) of the table you are extracting the data. And reading them might cause some headaches.
-Tips 💡To avoid having strange characters when reading the previews letters, make sure you are extracting the data with the same encoding of the table from your database (check properties of the table) or excel file.</description>
+      <description>Are you a non English R user? In my case, Spanish language has the following letters: á, é, í, ó, ú, ü and ñ. This letters are saved different depending on the encoding (computation language) of the table you are extracting the data. And reading them might cause some headaches.
+Tips 💡 To avoid having strange characters when reading the previews letters, make sure you are extracting the data with the same encoding of the table from your database (check properties of the table) or excel file.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://www.ainsuasty.com/7goals2022/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/7goals2022/</guid>
+      <description>Professional:
+ Upload 5 shiny apps to shiny portfolio. Read, solver and learn with R for Data science Read, solver and learn with JavaScript for R Learn Machine learning with Tidy Modelling tidyModels And Hands on machine learning  Personal:
+ Learn as much Polish as I can until June 2022. 😃 Decrease 10 kgs 🔥. Up to 10 January, my weigth is 83.4 kgs. Going to dancing clases 👯‍♀️ extra: secret 😇  </description>
     </item>
     
     <item>
@@ -68,12 +92,23 @@ Write me an email: afinsuasty@hotmail.com 📧</description>
     </item>
     
     <item>
-      <title>Projects</title>
-      <link>http://www.ainsuasty.com/projects/</link>
+      <title>My work developed in R </title>
+      <link>http://www.ainsuasty.com/rworld/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.ainsuasty.com/projects/</guid>
-      <description>Nothing to see here&amp;hellip; Move along!</description>
+      <guid>http://www.ainsuasty.com/rworld/</guid>
+      <description>Check my:
+   blogging is fun Projects Shiny Portfolio           </description>
+    </item>
+    
+    <item>
+      <title>Shiny portfolio  📖 </title>
+      <link>http://www.ainsuasty.com/shiny/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.ainsuasty.com/shiny/</guid>
+      <description>This section shows some of my shiny apps created overtime.
+ What have I learned from mastering shiny ?: contains some excercises from the chapters stored in one app. Bingo  </description>
     </item>
     
   </channel>

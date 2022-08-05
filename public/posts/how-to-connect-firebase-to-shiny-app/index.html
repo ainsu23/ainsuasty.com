@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Andrés Felipe Insuasty Ch.">
+    <meta name="description" content="At the planning phase of creating a shiny app you would find the importance of having storing data and interact with the stored system.
+You might have interaction with data bases using dbplyr, DBI, among others packages. Reading this blog you will find how to use httr in order to access or modify stored data in firebase.
+Interacting with firebase from R    Firstly, you need to have all setup in firebase so R can connect trough API, we recommend to store the API_KEY, firebase_url and password in the .">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to interact with firebase from a shiny app"/>
+<meta name="twitter:description" content="At the planning phase of creating a shiny app you would find the importance of having storing data and interact with the stored system.
+You might have interaction with data bases using dbplyr, DBI, among others packages. Reading this blog you will find how to use httr in order to access or modify stored data in firebase.
+Interacting with firebase from R    Firstly, you need to have all setup in firebase so R can connect trough API, we recommend to store the API_KEY, firebase_url and password in the ."/>
+
+    <meta property="og:title" content="How to interact with firebase from a shiny app" />
+<meta property="og:description" content="At the planning phase of creating a shiny app you would find the importance of having storing data and interact with the stored system.
+You might have interaction with data bases using dbplyr, DBI, among others packages. Reading this blog you will find how to use httr in order to access or modify stored data in firebase.
+Interacting with firebase from R    Firstly, you need to have all setup in firebase so R can connect trough API, we recommend to store the API_KEY, firebase_url and password in the ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.ainsuasty.com/posts/how-to-connect-firebase-to-shiny-app/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-12T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2022-03-12T00:00:00&#43;00:00" />
+
+
+
+    <title>
+  How to interact with firebase from a shiny app · AINSUASTY
+</title>
+
+    
+      <link rel="canonical" href="http://www.ainsuasty.com/posts/how-to-connect-firebase-to-shiny-app/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.3e043fbaa7e2e5e6be9937578db4bf710a84df4a8c835bddd693e39d7d46faed.css" integrity="sha256-PgQ/uqfi5ea&#43;mTdXjbS/cQqE30qMg1vd1pPjnX1G&#43;u0=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.51c0e6757ae35097fbc2c4659dabf099de25f5230d514d8072e3d6abe9356626.css" integrity="sha256-UcDmdXrjUJf7wsRlnavwmd4l9SMNUU2AcuPWq&#43;k1ZiY=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.82.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      AINSUASTY
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/7goals2022/">7 goals 2022</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/rworld/">My R world</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/resume">resume</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="http://www.ainsuasty.com/es/">🇪🇸</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://www.ainsuasty.com/posts/how-to-connect-firebase-to-shiny-app/">
+              How to interact with firebase from a shiny app
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2022-03-12T00:00:00Z'>
+                March 12, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/extract-information/">Extract information</a>
+      <span class="separator">•</span>
+    <a href="/categories/firebase/">firebase</a>
+      <span class="separator">•</span>
+    <a href="/categories/shiny/">shiny</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/shiny/">shiny</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/firebase/">firebase</a>
+    </span></div>
+
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p>At the planning phase of creating a shiny app you would find the importance of
+having storing data and interact with the stored system.</p>
+<p>You might have interaction with data bases using <code>dbplyr</code>, <code>DBI</code>, among others
+packages. Reading this blog you will find how to use <code>httr</code> in order to access
+or modify stored data in firebase.</p>
+<h2 id="interacting-with-firebase-from-r">
+  Interacting with firebase from R
+  <a class="heading-link" href="#interacting-with-firebase-from-r">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Firstly, you need to have all setup in firebase so R can connect trough API,
+we recommend to store the API_KEY, firebase_url and password in the <code>.Renviron</code>
+file in the root of the app (where ui.R and server.R are stored or app.R).</p>
+<p>Secondly, it is very important to be familiar with JSON structures in order to
+design how you are going to store your data in firebase.</p>
+<p>From previous, you might want to bring the information, update, delete, insert,
+among others. Let&rsquo;s build together the select.</p>
+<h3 id="define-json-structure-to-store-data">
+  Define JSON structure to store data
+  <a class="heading-link" href="#define-json-structure-to-store-data">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>In my learning polish app, I design to have a list of words, this list would
+contains a list of categories, and each of this would have the register with
+the word, translation in spanish and date of insertion in a simple text.</p>
+<p>For the purpose of the blog I am going to use a fragment of data from my
+learning polish shiny app.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#309;font-weight:bold">&#34;words&#34;</span> : {
+    <span style="color:#309;font-weight:bold">&#34;animals&#34;</span> : [
+        <span style="color:#c30">&#34;pies: perro: 2022-01-23&#34;</span>,
+        <span style="color:#c30">&#34;kot: gato: 2022-01-23&#34;</span>,
+        <span style="color:#c30">&#34;biedronka: mariquita: 2022-01-23&#34;</span>,
+        <span style="color:#c30">&#34;Ptak: Pájaro: 2022-01-23&#34;</span>,
+        <span style="color:#c30">&#34;Komar: Mosquito: 2022-01-23&#34;</span>, ],
+    <span style="color:#309;font-weight:bold">&#34;clothes&#34;</span> : [
+        <span style="color:#c30">&#34;buty: zapatos:2022-01-26&#34;</span>,
+        <span style="color:#c30">&#34;spodnie: pantalón: 2022-01-30&#34;</span>,
+        <span style="color:#c30">&#34;sweter: sueter: 2022-02-22&#34;</span>,
+        <span style="color:#c30">&#34;krawat: corbata: 2022-02-22&#34;</span>,
+        <span style="color:#c30">&#34;koszula: camisa: 2022-02-22&#34;</span> ],
+  }
+}
+</code></pre></div><h3 id="selecting-data-from-firebase">
+  Selecting data from firebase
+  <a class="heading-link" href="#selecting-data-from-firebase">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>The firebase url given by google is the place where your data is stored. It will
+look somethis as followwing:
+&ldquo;<a href="https://name-hash_given_firebase-default-rtdb.firebaseio.com/%22">https://name-hash_given_firebase-default-rtdb.firebaseio.com/&quot;</a></p>
+<p>If you would like to access to the words inside the category clothes, you might
+add the list words and clothes in the previous link, as follors:</p>
+<p>&ldquo;<a href="https://name-hash_given_firebase-default-rtdb.firebaseio.com/words/clothes%22">https://name-hash_given_firebase-default-rtdb.firebaseio.com/words/clothes&quot;</a></p>
+<p>In the documentary from firebase, you can find that you need to add .json when
+you are using an API (I invite you to read documentation to more detail).</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">select_words <span style="color:#555">&lt;-</span> <span style="color:#c0f">function</span>(categories) {
+    words <span style="color:#555">&lt;-</span> httr<span style="color:#555">::</span><span style="color:#c0f">content</span>(
+      httr<span style="color:#555">::</span><span style="color:#c0f">GET</span>(
+        <span style="color:#c0f">paste0</span>(
+          <span style="color:#c0f">Sys.getenv</span>(<span style="color:#c30">&#34;FIREBASE_URL&#34;</span>), <span style="color:#c30">&#34;/words/&#34;</span>, categories, <span style="color:#c30">&#34;.json&#34;</span>)
+      )
+    ) <span style="color:#555">%&gt;%</span>
+    purrr<span style="color:#555">::</span><span style="color:#c0f">flatten</span>() <span style="color:#555">%&gt;%</span>
+    <span style="color:#c0f">unlist</span>()
+
+  <span style="color:#c0f">return</span>(words)
+}
+</code></pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">select_categories <span style="color:#555">&lt;-</span> <span style="color:#c0f">function</span>() {
+  categories <span style="color:#555">&lt;-</span> <span style="color:#c0f">content</span>(<span style="color:#c0f">GET</span>(
+    <span style="color:#c0f">paste0</span>(<span style="color:#c0f">Sys.getenv</span>(<span style="color:#c30">&#34;FIREBASE_URL&#34;</span>), <span style="color:#c30">&#34;/words/.json&#34;</span>)
+  ))
+
+  <span style="color:#c0f">return</span>(categories)
+}
+</code></pre></div><h3 id="insert-data-to-firebase">
+  Insert data to firebase:
+  <a class="heading-link" href="#insert-data-to-firebase">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>For inserting data you can use the function PUT from <code>httr</code>. Into words variable
+we bring the words from category so we can add the new word to already stored
+words and converted to json with <code>jsonlite</code> package.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">add_words <span style="color:#555">&lt;-</span> <span style="color:#c0f">function</span>(categories, word) {
+  <span style="color:#c0f">if </span>(word <span style="color:#555">!=</span> <span style="color:#c30">&#34;&#34;</span>) {
+    words <span style="color:#555">&lt;-</span> <span style="color:#c0f">select_words</span>(categories)
+    body <span style="color:#555">&lt;-</span> jsonlite<span style="color:#555">::</span><span style="color:#c0f">toJSON</span>(<span style="color:#c0f">c</span>(words, word),
+      pretty <span style="color:#555">=</span> <span style="color:#069;font-weight:bold">TRUE</span>
+    )
+
+    response <span style="color:#555">&lt;-</span> httr<span style="color:#555">::</span><span style="color:#c0f">PUT</span>(
+      <span style="color:#c0f">paste0</span>(<span style="color:#c0f">Sys.getenv</span>(<span style="color:#c30">&#34;FIREBASE_URL&#34;</span>), <span style="color:#c30">&#34;/words/&#34;</span>, categories, <span style="color:#c30">&#34;.json&#34;</span>),
+      body <span style="color:#555">=</span> body
+    )
+  }
+}
+</code></pre></div><h3 id="delete-data-stored-in-firebase-from-r">
+  Delete data stored in firebase from R.
+  <a class="heading-link" href="#delete-data-stored-in-firebase-from-r">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>The following function receives the name of the category and one or more words
+(example: ptak and komar).</p>
+<p>The first purrr::map compares each word with the list of words inside the category
+and save the position where it is stored in firebase.</p>
+<p>The second purrr::map iterates over positions and tells firebase wich position
+to DELETE.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">delete_words <span style="color:#555">&lt;-</span> <span style="color:#c0f">function</span>(categories, word) {
+  words_delete <span style="color:#555">&lt;-</span> purrr<span style="color:#555">::</span><span style="color:#c0f">map</span>(
+    .x <span style="color:#555">=</span> stringr<span style="color:#555">::</span><span style="color:#c0f">str_to_lower</span>(word),
+    .f <span style="color:#555">=</span> <span style="color:#c0f">function</span>(.x) {
+      <span style="color:#c0f">content</span>(<span style="color:#c0f">GET</span>(
+        <span style="color:#c0f">paste0</span>(<span style="color:#c0f">Sys.getenv</span>(<span style="color:#c30">&#34;FIREBASE_URL&#34;</span>), <span style="color:#c30">&#34;/words/&#34;</span>, categories, <span style="color:#c30">&#34;.json&#34;</span>)
+      )) <span style="color:#555">%&gt;%</span>
+        stringi<span style="color:#555">::</span><span style="color:#c0f">stri_trans_tolower</span>(.) <span style="color:#555">%&gt;%</span>
+        <span style="color:#c0f">unique</span>() <span style="color:#555">%&gt;%</span>
+        stringr<span style="color:#555">::</span><span style="color:#c0f">str_starts</span>(.x) <span style="color:#555">%&gt;%</span>
+        <span style="color:#c0f">which</span>() <span style="color:#555">-</span> <span style="color:#f60">1</span>
+    }
+  )
+
+  purrr<span style="color:#555">::</span><span style="color:#c0f">map</span>(
+    .x <span style="color:#555">=</span> words_delete,
+    .f <span style="color:#555">=</span> <span style="color:#c0f">function</span>(.x) {
+      httr<span style="color:#555">::</span><span style="color:#c0f">DELETE</span>(
+        <span style="color:#c0f">paste0</span>(
+          <span style="color:#c0f">Sys.getenv</span>(<span style="color:#c30">&#34;FIREBASE_URL&#34;</span>), <span style="color:#c30">&#34;words/&#34;</span>, categories, <span style="color:#c30">&#34;/&#34;</span>, .x, <span style="color:#c30">&#34;.json&#34;</span>
+        )
+      )
+    }
+  )
+}
+</code></pre></div><p>Thanks for reading. Any comments or feedback I would love to hear from you,
+you can have my info from contact.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Personal Website made with ❤️ R + hugo + Github + Netlify.</p>
+      
+      
+        ©
+        
+          2021 -
+        
+        2022
+         Andrés Felipe Insuasty Ch. 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-176122758-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

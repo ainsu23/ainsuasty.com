@@ -9,19 +9,19 @@
 
     
 
-    <meta name="author" content="Andres Felipe Insuasty Ch.">
-    <meta name="description" content="Procesos de excel realizados en R1. Guardar en varias pestañas de un libroDividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
-separar archivo por columnalibrary(dplyr)archivo &lt;-readxl::read_excel(glue::glue(&quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&quot;))Seleccionar columna a separar y convierte a listacolumna &lt;- archivo %&gt;% select(País) %&gt;% distinct() %&gt;% as.data.frame()lista &lt;- as.">
+    <meta name="author" content="Andrés Felipe Insuasty Ch.">
+    <meta name="description" content=".blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Procesos de excel realizados en R 1. Guardar en varias pestañas de un libro Dividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
+ separar archivo por columna  library(dplyr) archivo &lt;-readxl::read_excel( glue::glue(&quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&quot;))  Seleccionar columna a separar y convierte a lista  columna &lt;- archivo %&gt;% select(País) %&gt;% distinct() %&gt;% as.">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tips de procesos de Excel en R"/>
-<meta name="twitter:description" content="Procesos de excel realizados en R1. Guardar en varias pestañas de un libroDividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
-separar archivo por columnalibrary(dplyr)archivo &lt;-readxl::read_excel(glue::glue(&quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&quot;))Seleccionar columna a separar y convierte a listacolumna &lt;- archivo %&gt;% select(País) %&gt;% distinct() %&gt;% as.data.frame()lista &lt;- as."/>
+<meta name="twitter:description" content=".blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Procesos de excel realizados en R 1. Guardar en varias pestañas de un libro Dividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
+ separar archivo por columna  library(dplyr) archivo &lt;-readxl::read_excel( glue::glue(&quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&quot;))  Seleccionar columna a separar y convierte a lista  columna &lt;- archivo %&gt;% select(País) %&gt;% distinct() %&gt;% as."/>
 
     <meta property="og:title" content="Tips de procesos de Excel en R" />
-<meta property="og:description" content="Procesos de excel realizados en R1. Guardar en varias pestañas de un libroDividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
-separar archivo por columnalibrary(dplyr)archivo &lt;-readxl::read_excel(glue::glue(&quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&quot;))Seleccionar columna a separar y convierte a listacolumna &lt;- archivo %&gt;% select(País) %&gt;% distinct() %&gt;% as.data.frame()lista &lt;- as." />
+<meta property="og:description" content=".blocks_style { font-weight: bold; background-color: whitesmoke; color: black; font-style: italic; font-family: Monospace; }  Procesos de excel realizados en R 1. Guardar en varias pestañas de un libro Dividir una base de un libro de excel en varias pestañas teniendo en cuenta una columna, resulta facil con el uso de purrr.
+ separar archivo por columna  library(dplyr) archivo &lt;-readxl::read_excel( glue::glue(&quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&quot;))  Seleccionar columna a separar y convierte a lista  columna &lt;- archivo %&gt;% select(País) %&gt;% distinct() %&gt;% as." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.ainsuasty.com/es/post/tips-de-procesos-de-excel-en-r/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-08-23T00:00:00&#43;00:00" />
@@ -37,12 +37,12 @@
       <link rel="canonical" href="http://www.ainsuasty.com/es/post/tips-de-procesos-de-excel-en-r/">
     
 
-    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
     
       
       
-      <link rel="stylesheet" href="/css/coder.min.c884c9ebf7b9aeed5fc748f64d6575016297c22227fb677bc4429bbed48d2d9b.css" integrity="sha256-yITJ6/e5ru1fx0j2TWV1AWKXwiIn&#43;2d7xEKbvtSNLZs=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="/css/coder.min.6a6bac2e36ae24265ed814800362715a564e2dba2940c6c6556e5842bddd1847.css" integrity="sha256-amusLjauJCZe2BSAA2JxWlZOLbopQMbGVW5YQr3dGEc=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -51,7 +51,7 @@
       
         
         
-        <link rel="stylesheet" href="/css/coder-dark.min.dde8a61eb31a32353b4baf3d9113f03c4ea2a8ca9bb736f59ca2d2b2cb664f0b.css" integrity="sha256-3eimHrMaMjU7S689kRPwPE6iqMqbtzb1nKLSsstmTws=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="/css/coder-dark.min.51c0e6757ae35097fbc2c4659dabf099de25f5230d514d8072e3d6abe9356626.css" integrity="sha256-UcDmdXrjUJf7wsRlnavwmd4l9SMNUU2AcuPWq&#43;k1ZiY=" crossorigin="anonymous" media="screen" />
       
     
 
@@ -65,11 +65,6 @@
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-    
-      <script defer src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js"
-        integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
-    
-
     <meta name="generator" content="Hugo 0.82.0" />
   </head>
 
@@ -77,9 +72,7 @@
   
     
   
-  <body class="preload-transitions colorscheme-auto"
-        onload=" twemoji.parse(document.body); "
-  >
+  <body class="preload-transitions colorscheme-auto">
     
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
@@ -112,8 +105,6 @@
           
           
             
-          
-            
               
                 <li class="navigation-item menu-separator">
                   <span>|</span>
@@ -123,6 +114,8 @@
               <li class="navigation-item">
                 <a href="http://www.ainsuasty.com/">🇬🇧</a>
               </li>
+            
+          
             
           
         
@@ -148,6 +141,15 @@
 <script src="http://www.ainsuasty.com/es/post/tips-de-procesos-de-excel-en-r/index.es_files/header-attrs/header-attrs.js"></script>
 
 
+<style type="text/css">
+.blocks_style {
+  font-weight: bold;
+  background-color: whitesmoke;
+  color: black;
+  font-style: italic;
+  font-family: Monospace;
+}
+</style>
 <div id="procesos-de-excel-realizados-en-r" class="section level2">
 <h2>Procesos de excel realizados en R</h2>
 <div id="guardar-en-varias-pestañas-de-un-libro" class="section level3">
@@ -156,14 +158,14 @@
 <ul>
 <li>separar archivo por columna</li>
 </ul>
-<pre class="r"><code>library(dplyr)
+<pre class="r blocks_style"><code>library(dplyr)
 
 archivo &lt;-readxl::read_excel(
   glue::glue(&quot;{here::here()}/datos/50_Mejores_Canciones_Latinas.xlsx&quot;))</code></pre>
 <ul>
 <li>Seleccionar columna a separar y convierte a lista</li>
 </ul>
-<pre class="r"><code>columna &lt;- archivo %&gt;% 
+<pre class="r blocks_style"><code>columna &lt;- archivo %&gt;% 
   select(País) %&gt;% 
   distinct() %&gt;% as.data.frame()
 
@@ -171,11 +173,11 @@ lista &lt;- as.list(columna$País)</code></pre>
 <ul>
 <li>Crea lista vacía para almacenar bases</li>
 </ul>
-<pre class="r"><code>bases = list()</code></pre>
+<pre class="r blocks_style"><code>bases = list()</code></pre>
 <ul>
 <li>Guarda cada base filtrada con el registro de la lista en una lista de dataframes, adiciona nombres a los elementos de la lista y mantiene las bases que contengan registros</li>
 </ul>
-<pre class="r"><code>bases &lt;- lista %&gt;% purrr::map(function(x){
+<pre class="r blocks_style"><code>bases &lt;- lista %&gt;% purrr::map(function(x){
   archivo %&gt;% filter(País == x)
 }) %&gt;% 
   purrr::set_names(columna[,1]) %&gt;% 
@@ -183,7 +185,7 @@ lista &lt;- as.list(columna$País)</code></pre>
 <ul>
 <li>Escribe en un archivo excel la lista de bases</li>
 </ul>
-<pre class="r"><code>writexl::write_xlsx(x = bases,
+<pre class="r blocks_style"><code>writexl::write_xlsx(x = bases,
                     path = glue::glue(&quot;{here::here()}/datos/separado.xlsx&quot;),
                     col_names = TRUE)</code></pre>
 </div>
@@ -200,13 +202,15 @@ lista &lt;- as.list(columna$País)</code></pre>
   <footer class="footer">
     <section class="container">
       
-        <p>Personal Website made with ❤️ from Rstudio cloud + hugo + Github + imagination and hardwork.</p>
+        <p>Personal Website made with ❤️ R + hugo + Github + Netlify.</p>
       
       
         ©
         
-        2021
-         Andres Felipe Insuasty Ch. 
+          2021 -
+        
+        2022
+         Andrés Felipe Insuasty Ch. 
       
       
          · 
@@ -221,7 +225,7 @@ lista &lt;- as.list(columna$País)</code></pre>
 
     
       
-      <script src="/js/coder.min.235666b114443867d43eeb5799d51f6252965e5163f338285e113fa381d3d27e.js" integrity="sha256-I1ZmsRREOGfUPutXmdUfYlKWXlFj8zgoXhE/o4HT0n4="></script>
+      <script src="/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
     
 
     
